@@ -39,7 +39,7 @@ Oracle사의 VirtualBox을 이용하여 가상환경을 구축하고 Debian Linu
 
 ## 프로젝트의 목표
 
-가상환경에 대해 알아보고 더 나아가 가상메모리까지 무엇인지 공부하는 것입니다.
+가상환경에 대해 알아보고 리눅스 운영체제가 무엇인지 공부하는 것입니다.
 
 그러한 환경에서 리눅스를 설치해봄에 따라 리눅스에 대한 이해와 운영체제에 대한 이해를 하는 것입니다.
 
@@ -131,5 +131,79 @@ Oracle사의 VirtualBox을 이용하여 가상환경을 구축하고 Debian Linu
 `커널`: 운영 체제(OS)의 주요 구성 요소이며 컴퓨터 하드웨어와 프로세스를 잇는 핵심 인터페이스이다. 메모리 관리, 프로세스 관리, 장치 드라이버, 시스템 호출 및 보안의 역할을 한다.
 
 `게스트` : 호스트의 가상 복사본이 제공되는 대상(운영체제)
+
+
+<br />
+<br />
+
+
+---
+
+## 가상머신의 종류
+
+---
+
+가상 시스템을 생성할 때 생성자는 VMM에 특정 매개 변수를 제공한다. 이러한 매개 변수에는 일반적으로 VMM이 고려해야할 CPU의 수, 메모리 크기, 네트워크, 저장장치 세부 사항이 포함된다. VMM은 이러한 매개 변수를 사용하여 가상 머신을 생성한다.
+
+---
+
+### 유형 0 하이퍼바이저
+
+---
+
+펌웨어를 통해 가상 머신 생성 및 관리를 지원하는 하드웨어 기반 VMM
+
+이 유형은 실제의 하드웨어 실행에 매우 가까우며 각각의 게스트 운영체제는 하드웨어 부분집합을 가진 네이티브 운영체제라고 할 수 있다.
+이 유형의 예시로는 IBM LPAR, Oracle LDOM이 있다.
+
+<figure>
+	<a href="https://user-images.githubusercontent.com/79088896/130199598-73ba2dc6-eac9-4641-b1b4-33ee9b197212.jpeg">
+		<img src="https://user-images.githubusercontent.com/79088896/130199598-73ba2dc6-eac9-4641-b1b4-33ee9b197212.jpeg"  width="600px;">
+	</a>
+</figure>
+
+<br />
+<br />
+
+
+
+---
+
+### 유형 1 하이퍼바이저
+
+---
+
+가상화를 제공하기 위해 구축된 운영체제와 유사한 소프트웨어
+이 유형은 커널모드에서 실행되며 게스트 가상 머신을 생성, 실행 및 관리하는 데 필요한 환경과 기능을 제공한다.
+각 게스트는 운영체제, 장치드라이버, 응용 프로그램등 완전한 네이티브 시스템과 같은 소프트웨어를 모두 포함한다.
+VMware ESX, Joyent SmartOS, Citrix XenServer이 유형 1 하이퍼바이저에 속한다. 
+
+<figure>
+	<a href="https://user-images.githubusercontent.com/79088896/130202114-e484d646-6980-41f8-9b66-dbeeb1c7d6de.jpeg">
+		<img src="https://user-images.githubusercontent.com/79088896/130202114-e484d646-6980-41f8-9b66-dbeeb1c7d6de.jpeg"  width="600px;">
+	</a>
+</figure>
+
+<br />
+<br />
+
+---
+
+### 유형 2 하이퍼바이저
+
+---
+
+표준 운영체제에서 실행되지만 게스트 운영체제에 VMM 기능을 제공하는 응용 프로그램
+이 유형의 하이퍼바이저는 다른 운영체제에서 실행되는 응용 프로그램으로 가상화가 되고 있음을 모른다. 호스트의 지원이 없으므로 프로세스 단계에서 모든 가상화 활동을 수행한다.
+이 유형의 예시로는 VMware Workstation, VirtualBox, Parallels 등이 있다.
+
+<figure>
+	<a href="https://user-images.githubusercontent.com/79088896/130201799-f75b00af-4e4f-4f50-be2a-3468d0ec1fec.jpeg">
+		<img src="https://user-images.githubusercontent.com/79088896/130201799-f75b00af-4e4f-4f50-be2a-3468d0ec1fec.jpeg"  width="600px;">
+	</a>
+</figure>
+
+<br />
+<br />
 
 
