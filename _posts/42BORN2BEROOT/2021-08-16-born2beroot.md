@@ -19,7 +19,7 @@ tags:
 ---
 
 본투비루트 과제는 간단하게 가상환경에서 특정 조건에 맞게 리눅스를 설치하고 환경설정을 해주는 것이다.
-여기서 사용하는 가상환경은 Oracle사의 VirtualBox를 이용하며 설치할 리눅스 종류는 Devian이다.
+여기서 사용하는 가상환경은 Oracle사의 VirtualBox를 이용하며 설치할 리눅스 종류는 Debian이다.
 
 <figure>
 	<a href="https://user-images.githubusercontent.com/79088896/129500999-36347c74-707f-49d2-8687-90de257d4843.png">
