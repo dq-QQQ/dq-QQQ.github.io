@@ -51,6 +51,14 @@ IOS 공부 어떻게 해야할까
 
 ---
 
+## The Swift Programming Language(APPLE)
+
+---
+
+## [The Swift Programming Language(APPLE)번역](https://jusung.gitbook.io/the-swift-language-guide/language-guide/03-strings-and-characters)
+
+---
+
 ## [Udemy-IOS boostcourse(Angela YU)](https://www.udemy.com/course/ios-13-app-development-bootcamp)
 
 ---
@@ -60,4 +68,22 @@ IOS 공부 어떻게 해야할까
 ---
 
 ## [IOS HACKATON in 42seoul](https://github.com/JaemooJung/SwiftUI_Piscine)
+
+---
+
+## 
+
+
+
+<br />
+<br />
+
+
+---
+
+# Xcode 공부
+
+---
+
+## [Xcode 가이드(APPLE)](https://help.apple.com/xcode/mac/8.0/#/devc8c2a6be1)
 
