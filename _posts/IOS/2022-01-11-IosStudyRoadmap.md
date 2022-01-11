@@ -1,0 +1,63 @@
+---
+title: IOS 공부 플랜
+categories: 
+     - IOS
+excerpt: "IOS 공부를 어떻게 해야할까:)"
+date:   2022-01-11
+tags:
+- ios
+- studyplan
+---
+
+# 개요
+
+IOS 공부 어떻게 해야할까
+
+
+---
+
+
+<br />
+<br />
+
+
+---
+
+# Swift 공부
+
+---
+
+## [부스트코스 야곰 강의](https://www.boostcourse.org/mo122)
+
+---
+
+## [Apple Developer Tutorial App Dev Training](https://developer.apple.com/tutorials/app-dev-training)
+
+---
+
+## [Apple Developer Tutorial SwiftUI](https://developer.apple.com/tutorials/swiftui)
+
+---
+
+## PlayGrounds
+
+---
+
+## SWIFT 프로그래밍-야곰
+
+---
+
+## Do it! 스위프트로 아이폰 앱만들기
+
+---
+
+## [Udemy-IOS boostcourse(Angela YU)](https://www.udemy.com/course/ios-13-app-development-bootcamp)
+
+---
+
+## [IOS PISICINE in 42seoul](https://github.com/SIE-KYIN/IOS-Piscine)
+
+---
+
+## [IOS HACKATON in 42seoul](https://github.com/JaemooJung/SwiftUI_Piscine)
+
