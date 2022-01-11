@@ -13,6 +13,18 @@ tags:
 
 IOS 공부 어떻게 해야할까
 
+<br />
+
+
+[좋은 정보 많음](https://zeddios.tistory.com/162)
+
+<br />
+
+
+[공부 순서](https://m.blog.naver.com/azanghs/222173729832)
+
+
+네이티브 우선 다하고 나중에 시간되면 플러터,다트 공부
 
 ---
 
