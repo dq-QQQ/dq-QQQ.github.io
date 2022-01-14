@@ -119,8 +119,8 @@ tags:
 ## 게임 플레이 화면
 
 <figure>
-	<a href="https://user-images.githubusercontent.com/79088896/149480624-50bbae34-ebcd-4ee1-b00b-a729ad38ecb1.png">
-		<img src="https://user-images.githubusercontent.com/79088896/149480624-50bbae34-ebcd-4ee1-b00b-a729ad38ecb1.png"  width="800px;">
+	<a href="https://user-images.githubusercontent.com/79088896/149483915-50d5a4fc-9e65-4f9d-bc2c-b7b295355a5d.png">
+		<img src="https://user-images.githubusercontent.com/79088896/149483915-50d5a4fc-9e65-4f9d-bc2c-b7b295355a5d.png"  width="800px;">
 	</a>
 </figure>
 
