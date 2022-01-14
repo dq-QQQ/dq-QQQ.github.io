@@ -81,7 +81,7 @@ tags:
 
 <figure>
 	<a href="https://user-images.githubusercontent.com/79088896/149478857-6cb7dd2c-a92e-4f76-97ca-87454ab08a6c.png">
-		<img src="https://user-images.githubusercontent.com/79088896/149478857-6cb7dd2c-a92e-4f76-97ca-87454ab08a6c.png"  width="400px;">
+		<img src="https://user-images.githubusercontent.com/79088896/149478857-6cb7dd2c-a92e-4f76-97ca-87454ab08a6c.png"  width="800px;">
 	</a>
 </figure>
 
@@ -94,7 +94,7 @@ tags:
 
 <figure>
 	<a href="https://user-images.githubusercontent.com/79088896/149479422-b8d66b17-f678-45fe-a8dd-ee1524e67e51.png">
-		<img src="https://user-images.githubusercontent.com/79088896/149479422-b8d66b17-f678-45fe-a8dd-ee1524e67e51.png"  width="400px;">
+		<img src="https://user-images.githubusercontent.com/79088896/149479422-b8d66b17-f678-45fe-a8dd-ee1524e67e51.png"  width="800px;">
 	</a>
 </figure>
 
@@ -107,7 +107,7 @@ tags:
 
 <figure>
 	<a href="https://user-images.githubusercontent.com/79088896/149480071-4c43e7d0-e539-4bee-bedf-3f059dcf5f79.png">
-		<img src="https://user-images.githubusercontent.com/79088896/149480071-4c43e7d0-e539-4bee-bedf-3f059dcf5f79.png"  width="400px;">
+		<img src="https://user-images.githubusercontent.com/79088896/149480071-4c43e7d0-e539-4bee-bedf-3f059dcf5f79.png"  width="800px;">
 	</a>
 </figure>
 
@@ -120,7 +120,7 @@ tags:
 
 <figure>
 	<a href="https://user-images.githubusercontent.com/79088896/149480624-50bbae34-ebcd-4ee1-b00b-a729ad38ecb1.png">
-		<img src="https://user-images.githubusercontent.com/79088896/149480624-50bbae34-ebcd-4ee1-b00b-a729ad38ecb1.png"  width="400px;">
+		<img src="https://user-images.githubusercontent.com/79088896/149480624-50bbae34-ebcd-4ee1-b00b-a729ad38ecb1.png"  width="800px;">
 	</a>
 </figure>
 
@@ -130,7 +130,7 @@ tags:
 
 <figure>
 	<a href="https://user-images.githubusercontent.com/79088896/149481203-5553adb5-ecee-4292-8497-73b7104651bc.png">
-		<img src="https://user-images.githubusercontent.com/79088896/149481203-5553adb5-ecee-4292-8497-73b7104651bc.png"  width="400px;">
+		<img src="https://user-images.githubusercontent.com/79088896/149481203-5553adb5-ecee-4292-8497-73b7104651bc.png"  width="800px;">
 	</a>
 </figure>
 
