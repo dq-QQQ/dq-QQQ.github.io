@@ -1,5 +1,5 @@
 ---
-title: Racing Game 개발
+title: Racing Game 개발 
 date: 2021-08-16
 excerpt: "레이싱 게임을 만들어보자:)"
 categories:
@@ -23,7 +23,9 @@ tags:
 
 그에 과 동기([KJS](https://github.com/GitHubSeob), [beeseo147](https://github.com/beeseo147))들과 동아리를 구성하여 게임 프로젝트 하나를 구현해보기로 했다.
 
-그 과정을 풀어보도록 하겠다.
+파일의 크기로 인해 우리가 수정한 파일들만 깃허브에 업로드하였다. 다운받고 기본 프로젝트에 넣으면 실행할 수 있다.
+
+[업로드 장소](https://github.com/SIE-KYIN/UE4_Racing_Game)
 
 
 <br />
@@ -71,30 +73,68 @@ tags:
 
 ---
 
-# 개발 과정
+# 구현
 
 ---
+
+## 시작 화면
+
+<figure>
+	<a href="https://user-images.githubusercontent.com/79088896/149478857-6cb7dd2c-a92e-4f76-97ca-87454ab08a6c.png">
+		<img src="https://user-images.githubusercontent.com/79088896/149478857-6cb7dd2c-a92e-4f76-97ca-87454ab08a6c.png"  width="400px;">
+	</a>
+</figure>
 
 <br />
-
-
-## 기존 계획
-
----
-
-초기에 세웠던 계획은 오징어 게임의 무궁화 꽃이 피었습니다를 구현해보기로 했었다.
-
-그러나 오징어게임의 인기가 식고 나서 다시 회의를 한 결과 레이싱 게임을 구현하기로 확정했다.
-
-첫번째 강의를 다 보고 나서 공통적으로 얘기하던 것은 블루프린트가 아닌 c++를 이용하여 만들어보기를 희망한다는 것이었다.
-
-따라서 레이싱 게임을 c++로 만들어보기로 확정지었다.
-
 <br />
 
 ---
 
-# 수정 사항
+## 옵션
+
+<figure>
+	<a href="https://user-images.githubusercontent.com/79088896/149479422-b8d66b17-f678-45fe-a8dd-ee1524e67e51.png">
+		<img src="https://user-images.githubusercontent.com/79088896/149479422-b8d66b17-f678-45fe-a8dd-ee1524e67e51.png"  width="400px;">
+	</a>
+</figure>
+
+<br />
+<br />
 
 ---
+
+## 게임 중지 옵션
+
+<figure>
+	<a href="https://user-images.githubusercontent.com/79088896/149480071-4c43e7d0-e539-4bee-bedf-3f059dcf5f79.png">
+		<img src="https://user-images.githubusercontent.com/79088896/149480071-4c43e7d0-e539-4bee-bedf-3f059dcf5f79.png"  width="400px;">
+	</a>
+</figure>
+
+<br />
+<br />
+
+---
+
+## 게임 플레이 화면
+
+<figure>
+	<a href="https://user-images.githubusercontent.com/79088896/149480624-50bbae34-ebcd-4ee1-b00b-a729ad38ecb1.png">
+		<img src="https://user-images.githubusercontent.com/79088896/149480624-50bbae34-ebcd-4ee1-b00b-a729ad38ecb1.png"  width="400px;">
+	</a>
+</figure>
+
+<br />
+<br />
+
+
+<figure>
+	<a href="https://user-images.githubusercontent.com/79088896/149481203-5553adb5-ecee-4292-8497-73b7104651bc.png">
+		<img src="https://user-images.githubusercontent.com/79088896/149481203-5553adb5-ecee-4292-8497-73b7104651bc.png"  width="400px;">
+	</a>
+</figure>
+
+<br />
+<br />
+
 
