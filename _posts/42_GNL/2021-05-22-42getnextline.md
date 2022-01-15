@@ -1,5 +1,5 @@
 ---
-title: Get_Next_Line(미완성)
+title: Get_Next_Line
 categories: 
    - 42_GNL
 excerpt: "파일 입출력을 이용해서 파일을 개행단위로 나눠보자:)"
