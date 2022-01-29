@@ -88,7 +88,19 @@ IOS 공부 어떻게 해야할까
 
 ---
 
-## [스탠포드 강의](https://cs193p.sites.stanford.edu/)
+## [스탠포드 swiftui 강의](https://cs193p.sites.stanford.edu/)
+
+---
+
+## [스위프트 강의 너무 자세함](https://www.hackingwithswift.com/100)
+
+---
+
+## [스위프트 강의 이걸로 할거](https://www.youtube.com/c/iOSAcademy/playlists)
+
+---
+
+## [ios 개발 유튜버](https://www.youtube.com/c/CodeWithChris/playlists)
 
 <br />
 <br />
