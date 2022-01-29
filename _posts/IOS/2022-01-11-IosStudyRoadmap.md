@@ -130,4 +130,6 @@ IOS 공부 어떻게 해야할까
 2. 애플 swiftui and app developer tutorial
 3. 안겔라 유
 4. 스탠포드강의
-5. 
+5. 피신
+6. 프로젝트
+7. 싹 있으면 그거
