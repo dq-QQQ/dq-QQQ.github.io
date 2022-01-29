@@ -59,7 +59,7 @@ IOS 공부 어떻게 해야할까
 
 ---
 
-## Do it! 스위프트로 아이폰 앱만들기
+## Do it! 스위프트로 아이폰 앱만들기 (스토리보드로 간단한 프로젝트 형식의 책, swiftui 안나옴)
 
 ---
 
@@ -83,9 +83,12 @@ IOS 공부 어떻게 해야할까
 
 ---
 
-## [강의](https://www.raywenderlich.com/ios)
+## [강의 많은 곳](https://www.raywenderlich.com/ios)
 
 
+---
+
+## [스탠포드 강의](https://cs193p.sites.stanford.edu/)
 
 <br />
 <br />
@@ -99,3 +102,20 @@ IOS 공부 어떻게 해야할까
 
 ## [Xcode 가이드(APPLE)](https://help.apple.com/xcode/mac/8.0/#/devc8c2a6be1)
 
+
+
+<br />
+<br />
+
+
+---
+
+# 순서
+
+---
+
+1. swiftui 기반의 ios 프로그래밍 빠르게 완독
+2. 애플 swiftui and app developer tutorial
+3. 안겔라 유
+4. 스탠포드강의
+5. 
