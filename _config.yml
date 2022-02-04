@@ -370,6 +370,13 @@ han: false
 # Swiftype Search API Key
 #swiftype_key:
 
+markdown: kramdown
+kramdown:
+    highlighter: rouge
+    syntax_highlighter_opts:
+        block:
+            line_numbers: true
+
 # Baidu Analytics ID
 #baidu_analytics:
 
