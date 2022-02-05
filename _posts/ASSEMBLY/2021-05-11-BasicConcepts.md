@@ -7,7 +7,6 @@ date:   2021-05-19 12:30:51 +0900
 tags:
 - ceminar
 - assembly
-comments : true
 ---
 
 # 개요
