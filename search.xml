@@ -4,7 +4,7 @@ sitemap: false
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <search>
-  {% for post in site.archives %}
+  {% for post in 57 %}
     <entry>
       <title><![CDATA[{{ post.title | strip_html }}]]></title>
       <url>{{ post.url | relative_url }}</url>
