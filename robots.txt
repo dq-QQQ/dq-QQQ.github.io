@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://likelionSungGuk.github.io/sitemap.xml
