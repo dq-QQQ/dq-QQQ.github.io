@@ -4,10 +4,10 @@
 # ---------------------------------------------------------------
 
 # Site
-title: NexT
-subtitle:
+title: UPIL
+subtitle: 'Motto(Unlearned Pain Is Lifelong)'
 description:
-author: John Doe
+author: quentin
 # Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
 language: en
 date_format: '%Y-%m-%d'
@@ -20,17 +20,16 @@ permalink: pretty
 
 # Pagination
 paginate: 10
-#paginate_path: "/page:num/"
-#archive:
-  #paginate: 10
-  #paginate_path: "/page:num/"
+paginate_path: "/page:num/"
+archive:
+  paginate: 20
+  paginate_path: "/page:num/"
 #category:
   #paginate: 10
   #paginate_path: "/page:num/"
 #tag:
   #paginate: 10
   #paginate_path: "/page:num/"
-
 # Handling Reading
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "Gemfile", "Gemfile.lock", "README_en.md", "vendor"]
 
@@ -76,7 +75,7 @@ plugins:
 # ---------------------------------------------------------------
 
 # Put your favicon.ico into `assets/` directory.
-favicon: /assets/favicon.ico
+favicon: /assets/42.ico
 
 # Set default keywords (Use a comma to separate)
 keywords: "Jekyll, NexT"
@@ -84,16 +83,16 @@ keywords: "Jekyll, NexT"
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
 # Set rss to specific value if you have burned your feed already.
-rss:
+rss: false
 
 # Specify the date when the site was setup
-#since: 2015
+since: 2021
 
 # icon between year and author @Footer
-authoricon: heart
+authoricon: 
 
 # Footer `powered-by` and `theme-info` copyright
-copyright: true
+copyright: false
 
 # ---------------------------------------------------------------
 # SEO Settings
@@ -118,10 +117,10 @@ index_with_subtitle: false
 # When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -> archives)
 menu:
   home: /
-  #categories: /categories/
-  #about: /about/
   archives: /archives/
+  categories: /categories/
   tags: /tags/
+  about: /about/
   #sitemap: /sitemap.xml
   #commonweal: /404.html
 
@@ -155,7 +154,8 @@ scheme: Muse
 #scheme: Mist
 #scheme: Pisces
 
-
+# Dark Mode
+darkmode: true
 # ---------------------------------------------------------------
 # Font Settings
 # - Find fonts on Google Fonts (https://www.google.com/fonts)
@@ -213,10 +213,9 @@ font:
 # Social Links
 # Key is the link label showing to end users.
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
-#social:
-  #LinkLabel: Link
-
-
+social:
+  GitHub: https://github.com/SIE-KYIN
+  
 # Social Links Icons
 # Icon Mapping:
 #   Map a menu item to a specific FontAwesome icon name.
@@ -230,10 +229,9 @@ social_icons:
   Twitter: twitter
   Weibo: weibo
 
-
 # Sidebar Avatar
 # in directory: /assets/images/avatar.gif
-#avatar:
+avatar: /assets/images/myprofile.png
 
 
 # Table Of Contents in the Sidebar
@@ -244,7 +242,7 @@ toc:
   number: true
 
   # If true, all words will placed on next lines if header width longer then sidebar width.
-  wrap: false
+  wrap: true
 
 
 # Creative Commons 4.0 International License.
@@ -274,10 +272,10 @@ sidebar:
   offset_float: 0
 
   # Back to top in sidebar
-  b2t: false
+  b2t: true
 
   # Scroll percent label in b2t button
-  scrollpercent: false
+  scrollpercent: true
 
 
 # Blog rolls
@@ -296,7 +294,7 @@ sidebar:
 scroll_to_more: true
 
 # Automatically saving scroll position on each post/page in cookies.
-save_scroll: false
+save_scroll: true
 
 # Automatically excerpt description in homepage as preamble text.
 excerpt_description: true
@@ -372,6 +370,8 @@ han: false
 # Swiftype Search API Key
 #swiftype_key:
 
+
+
 # Baidu Analytics ID
 #baidu_analytics:
 
@@ -381,37 +381,11 @@ han: false
 # Disqus
 disqus:
   enable: false
-  shortname:
-  count: true
+  shortname: sie-kyin-github-io-1
+  count: false
   # hide comments (visitors need to click to load the comments)
   # count need to be false when hide is true
   hide: false
-
-# <wildfire>
-wildfire:
-  enable: false
-  # version - It's recommended to use the following versions.
-  loaderVersion: 1.2.5 # https://www.npmjs.com/package/wildfire-comment
-  useDev: true
-  version: 0.5.6 
-  # database config
-  databaseProvider: firebase # or wilddog
-  firebase: # your firebase config goes here ↓
-    apiKey: 
-    authDomain:
-    databaseURL:
-    projectId:
-    storageBucket:
-    messagingSenderId:
-  wilddog: # your wilddog config goes here ↓
-    siteId:
-  # other configs
-  theme: light # or dark
-  locale: en # or other locales, e.g. zh-CN
-  defaultAvatarURL: 
-# Any question? 
-# Raise an issue here: https://github.com/cheng-kang/wildfire/issues
-# </wildfire>
 
 # Hypercomments
 #hypercomments_id:
@@ -462,7 +436,7 @@ gitalk:
 #google_site_verification:
 
 # Google Analytics
-#google_analytics:
+google_analytics: G-RN41VKXXPJ
 
 # Yandex Webmaster tools verification setting
 # See: https://webmaster.yandex.ru/
@@ -562,7 +536,7 @@ baidu_push: false
 # API Documentation:
 # https://developers.google.com/google-apps/calendar/v3/reference/events/list
 calendar:
-  enable: false
+  enable: true
   calendar_id: <required>
   api_key: <required>
   orderBy: startTime
@@ -596,7 +570,7 @@ local_search:
 # External URL with BASE64 encrypt & decrypt
 # Usage: {% exturl text url "title" %}
 # Alias: {% extlink text url "title" %}
-exturl: false
+exturl: true
 
 
 #! ---------------------------------------------------------------
