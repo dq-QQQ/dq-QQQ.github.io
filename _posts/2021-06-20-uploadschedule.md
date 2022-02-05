@@ -6,7 +6,6 @@ categories:
 - example
 tags: 
 - example
-comments : true
 ---
 
 
