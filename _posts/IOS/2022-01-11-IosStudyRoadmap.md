@@ -94,11 +94,7 @@ IOS 공부 어떻게 해야할까
 
 ---
 
-## [스위프트 강의 너무 자세함](https://www.hackingwithswift.com/100)
-
----
-
-## [스위프트 강의 이걸로 할거](https://www.youtube.com/c/iOSAcademy/playlists)
+## [한성현 교수 강의](https://www.youtube.com/channel/UCM8wseo6DkA-D7yGlCrcrwA)
 
 ---
 
@@ -128,10 +124,10 @@ IOS 공부 어떻게 해야할까
 
 ---
 
-1. 한성현 교수 강의 듣기 && sweet swiftui 빠르게 완독 
+1. 한성현 교수 강의 듣기(문법) && sweet swiftui 빠르게 완독(swiftui공부)
+2. 스탠포드강의
 3. 애플 swiftui and app developer tutorial
 4. 안겔라 유
-5. 스탠포드강의
 6. 피신
 7. 프로젝트
 8. 싹 있으면 그거
