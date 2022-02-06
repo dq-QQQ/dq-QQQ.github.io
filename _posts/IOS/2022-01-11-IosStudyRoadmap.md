@@ -125,9 +125,10 @@ IOS 공부 어떻게 해야할까
 ---
 
 1. 한성현 교수 강의 듣기(문법) && sweet swiftui 빠르게 완독(swiftui공부)
-2. 스탠포드강의
-3. 애플 swiftui and app developer tutorial
-4. 안겔라 유
+2. 스위프트로 기초 자료구조 짜기/ 기초 알고리즘 짜기
+3. 스탠포드강의
+4. 애플 swiftui and app developer tutorial
+5. 안겔라 유
 6. 피신
 7. 프로젝트
 8. 싹 있으면 그거
