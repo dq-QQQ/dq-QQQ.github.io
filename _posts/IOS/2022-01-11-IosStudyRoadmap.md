@@ -16,6 +16,8 @@ IOS 공부 어떻게 해야할까
 <br />
 
 
+[스위프트 깔끔하게 정리해놓음](https://babbab2.tistory.com/category/iOS/Swift)
+
 [좋은 정보 많음](https://zeddios.tistory.com/162)
 
 <br />
