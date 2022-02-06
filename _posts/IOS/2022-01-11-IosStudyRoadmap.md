@@ -128,10 +128,10 @@ IOS 공부 어떻게 해야할까
 
 ---
 
-1. swiftui 기반의 ios 프로그래밍 빠르게 완독
-2. 애플 swiftui and app developer tutorial
-3. 안겔라 유
-4. 스탠포드강의
-5. 피신
-6. 프로젝트
-7. 싹 있으면 그거
+1. 한성현 교수 강의 듣기 && sweet swiftui 빠르게 완독 
+3. 애플 swiftui and app developer tutorial
+4. 안겔라 유
+5. 스탠포드강의
+6. 피신
+7. 프로젝트
+8. 싹 있으면 그거
