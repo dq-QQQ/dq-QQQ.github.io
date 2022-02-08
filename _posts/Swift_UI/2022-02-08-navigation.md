@@ -98,7 +98,85 @@ return NavigationView {
 지정한 목적지로 이동할 수 있도록 만들어진 버튼으로, 뷰를 눌렀을 때 화면을 전환하는 기능이다.
 
 ```swift
-NavigationLink(destination: Text("Destination View")) {
-  Image("SwiftUI")
+NavigationView {
+  NavigationLink(destination: Text("Destination View")) {
+    Image("SwiftUI")
+    }
+    .navigationBarTitle("네비게이션 링크")
+  }
 }
-.navigationBarTitle("
+```
+
+<br />
+
+---
+
+## hidden
+
+---
+
+<br />
+
+---
+
+### navigationBarHidden
+
+---
+
+네비게이션 바를 `navigationBarHidden` 수식어를 사용하면 숨길 수 있다.
+
+`func navigationBarHidden(_ hidden: Bool) -> some View`
+
+```swift
+NavigationView {
+ .navigationBarTitle("hidden")
+ .navigationBarHidden(true)
+}
+```
+
+
+<br />
+
+---
+
+### navigationBarBackButtonHidden
+
+---
+
+네비게이션 바를 `navigationBarBackButtonHidden` 수식어를 사용하면 숨길 수 있다.
+
+`func navigationBarBackButtonHidden(_ hidesBackButton: Bool) -> some View`
+
+```swift
+let destination = Text("Destination View")
+  .navigationBarBackButtonHidden(true)
+  
+NavigationView {
+  NavigationLink(destination: destination) {
+    Image("SwiftUI")
+    }
+    .navigationBarTitle("네비게이션 링크")
+  }
+}
+```
+
+<br />
+
+---
+
+## NavigationViewStyle
+
+---
+
+네비게이션 뷰는 3가지 스타일을 제공한다.
+
+
+* `DefaultNavigationViewStyle` : 환경에 따라 자동으로 스타일을 결정한다.
+* `StackNavigationViewStyle` : 네비게이션 계층 구조를 하나의 뷰만으로 탐색한다. 첫번째 뷰 이외에는 무시한다.
+* `DoubleColumnNavigationViewStyle` : 첫째 뷰와 마지막 뷰를 이용해서 컨텐츠를 표현한다.
+
+```swift
+NavigationView { ... }
+  .navigationViewSytle(sytle)
+```
+
