@@ -1,8 +1,8 @@
 ---
-title: SwiftUI 뷰 구성하기
+title: SwiftUI 텍스트와 이미지
 categories:
   - SWIFTUI
-excerpt: "SwiftUI의 뷰 구성에 대해서 공부해보자:)"
+excerpt: "SwiftUI의 텍스트와 이미지에 대해서 공부해보자:)"
 date: 2022-02-03 
 tags:
 - SwiftUI
