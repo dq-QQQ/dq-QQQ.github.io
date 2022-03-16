@@ -98,9 +98,13 @@ int main(){
 
 ---
 
-# ctrl-C와 ctrl-D 차이
+# ctrl-C, ctrl-D and ctrl-\
 
 ---
 
-ctrl-C는 위에서 
- 
+ctrl-C는 위에서 말한 것처럼 현재의 프로세스에 SIGINT 신호를 보내는 것을 의미하고,
+
+ctrl-D는 표준 입력에 EOF를 의미한다. 그러므로 입력창에 입력을 하면 터미널이 종료가 된다.
+
+ctrl-\는 현재의 프로세스에 SIGQUIT 신호를 보낸다. 그러면 프로그램이 종료된다.
+
