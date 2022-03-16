@@ -69,7 +69,10 @@ SYSIFCOPT(*ASYNCSIGNAL)옵션으로 컴파일하면 비동기 신호를 사용�
 
 ---
 
-signal(SIGINT, 
+`signal(SIGINT, SIG_IGN);`와 같은 형식으로 사용하면 SIGINT신호는 무시된다.
+
+두번째 파라메터로 SIG_IGN을 넣어주면 해당 신호를 무시하라는 뜻이다.
+
 
 <br />
 <br />
