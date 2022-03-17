@@ -31,3 +31,26 @@ tags:
 
 ---
 
+## 환경변수
+
+[환경변수](https://sie-kyin.github.io/42_minishell/2022/03/16/env/)
+
+<br />
+
+## readline 라이브러리
+
+[readline 라이브러리](https://sie-kyin.github.io/42_minishell/2022/03/16/readline/)
+
+<br />
+
+## Signal 함수와 인터럽트
+
+[Signal 함수와 인터럽트](https://sie-kyin.github.io/42_minishell/2022/03/16/interrupt/)
+
+
+<br />
+
+## 사용 가능한 함수
+
+[팀원의 정리](https://succulent-manatee-f95.notion.site/gshim-MINISHELL-9dd7a995a20c42c083b74534350cee74)
+
