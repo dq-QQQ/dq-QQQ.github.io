@@ -102,3 +102,34 @@ class xxxBean {
 
 `<jsp:useBean id="mybean" scope="request" class="MyBean" />`와 같은 형태로 사용한다.
 
+| 속성 | 설명 |
+| --- | --- |
+| id | 빈즈 클래스의 인스턴스 이름으로 사용할 변수 |
+| class | 빈즈 클래스의 클래스 이름 | 
+| scope | 빈트 클래스의 범위로 내장객체를 넣는다 |
+
+<br />
+<br />
+
+---
+
+# JSP에서 빈즈 속성 설정
+
+---
+
+`<jsp:setProperty name="mybean" property="userid" />`
+`<jsp:setProperty name="mybean" property="userpasswd" />`
+
+| 속성 | 설명 |
+| --- | --- |
+| name | 빈즈 클래스의 인스턴스 이름 |
+| property | 속성 값으로 빈즈 클래스의 setXxx메서드와 매칭될 속성값 |
+
+대부분의 경우 property 값으로는 *를 사용한다.
+
+```java
+mybean.setUserid(request.getParameter("username"));
+mybean.setPasswd(request.getParameter("userpasswd"));
+```
+위의 두 코드는 같은 기능을 수행하는 코드이다.
+
