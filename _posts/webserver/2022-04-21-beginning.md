@@ -1,5 +1,5 @@
 ---
-title: 웹 프로그래밍과 JSP1
+title: 웹 프로그래밍과 JSP
 categories: 
   - webserver
 excerpt: "웹 프로그래밍과 JSP의 기초에 대해서 공부해보자:)"
@@ -52,21 +52,7 @@ www나 Email은 인터넷 기반의 서비스이다.
 
 ---
 
-# 웹 서버 기술
-
----
-
-웹 프로그램은 서버와 클라이언트의 협력에 의해 구현된다.
-
-웹 서버에 필요한 기술로는 서블릿, JSP, ASP.Net, PHP가 있다.
-
-JSP, ASP, PHP는 서버 스크립트 기술로 HTML에 프로그램 언어를 스크립트 형태로 사용할 수 있게 해주는 기술이다.
-
-<br />
-
----
-
-## JSP
+# JSP
 
 ---
 
@@ -79,10 +65,11 @@ JSP는 기본적으로 서블릿으로 변경되어 실행되며, 메모리상�
 스프링 프레임워크와 결합하여 가장 많이 사용하는 웹 서버 기술이다.
 
 <br />
+<br />
 
 ---
 
-## 서블릿
+# 서블릿
 
 ---
 
@@ -97,7 +84,7 @@ JSP와 서블릿은 대체 기술이라기보다 상호보완적인 기술이다
 
 ---
 
-### 서블릿 동작 과정
+## 서블릿 실행 과정
 
 ---
 
@@ -111,7 +98,7 @@ JSP와 서블릿은 대체 기술이라기보다 상호보완적인 기술이다
 
 ---
 
-### 서블릿 동작 과정
+## 서블릿 동작 과정
 
 ---
 
@@ -120,3 +107,19 @@ JSP와 서블릿은 대체 기술이라기보다 상호보완적인 기술이다
 		<img src="https://user-images.githubusercontent.com/79088896/164401248-3e97a762-8ebd-4492-a739-9cf0d9e12266.jpeg" class="w8" />
 	</a>
 </figure>
+
+<br />
+<br />
+
+---
+
+# JSP와 서블릿의 관계
+
+---
+
+<figure>
+	<a href="https://user-images.githubusercontent.com/79088896/164409985-1a72554f-fbbf-44b9-924d-b0db8d5ff106.jpeg">
+		<img src="https://user-images.githubusercontent.com/79088896/164409985-1a72554f-fbbf-44b9-924d-b0db8d5ff106.jpeg" class="w8" />
+	</a>
+</figure>
+
