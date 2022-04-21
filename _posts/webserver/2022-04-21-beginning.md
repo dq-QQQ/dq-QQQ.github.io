@@ -1,5 +1,5 @@
 ---
-title: 웹 프로그래밍과 JSP
+title: 웹 프로그래밍과 JSP1
 categories: 
   - webserver
 excerpt: "웹 프로그래밍과 JSP의 기초에 대해서 공부해보자:)"
