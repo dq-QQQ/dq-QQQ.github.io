@@ -3,7 +3,7 @@ title: 웹 프로그래밍과 JSP
 categories: 
   - webserver
 excerpt: "웹 프로그래밍과 JSP의 기초에 대해서 공부해보자:)"
-date:   2022-04-21 14:29:08
+date:   2022-04-21
 tags:
 - webserver
 ---
@@ -90,3 +90,33 @@ JSP는 기본적으로 서블릿으로 변경되어 실행되며, 메모리상�
 
 JSP와 서블릿은 대체 기술이라기보다 상호보완적인 기술이다.
 
+서블릿은 컨테이너라고 불리는 서버 소프트웨어에 의해 동작한다.
+
+
+<br />
+
+---
+
+### 서블릿 동작 과정
+
+---
+
+<figure>
+	<a href="https://user-images.githubusercontent.com/79088896/164401089-115fa903-7f54-4a95-8ceb-4955dd4f65fb.jpeg">
+		<img src="https://user-images.githubusercontent.com/79088896/164401089-115fa903-7f54-4a95-8ceb-4955dd4f65fb.jpeg" class="w8" />
+	</a>
+</figure>
+
+<br />
+
+---
+
+### 서블릿 동작 과정
+
+---
+
+<figure>
+	<a href="https://user-images.githubusercontent.com/79088896/164401248-3e97a762-8ebd-4492-a739-9cf0d9e12266.jpeg">
+		<img src="https://user-images.githubusercontent.com/79088896/164401248-3e97a762-8ebd-4492-a739-9cf0d9e12266.jpeg" class="w8" />
+	</a>
+</figure>
