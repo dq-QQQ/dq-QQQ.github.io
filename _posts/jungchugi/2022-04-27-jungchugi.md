@@ -28,13 +28,10 @@ tags:
 
 ---
 
-폭포수 모형
-
-프로토타입 모형
-
-나선형 모형
-
-애자일 모형
+* 폭포수 모형
+* 프로토타입 모형
+* 나선형 모형
+* 애자일 모형
 
 <br />
 
@@ -98,6 +95,52 @@ tags:
 ---
 
 ### XP(eXtreme Programming)
+
+---
+
+고객의 요구사항에 유연하게 대응하기 위해 고객의 참여와 개발과정의 반복을 통해 생산성을 향상시키는 기법
+
+<br />
+
+---
+
+#### XP의 5가지 핵심가치
+
+---
+
+* 의사소통
+* 단순성
+* 용기
+* 존중
+* 피드백 
+
+<br />
+
+---
+
+#### XP의 12가지 실천방법
+
+---
+
+* pair Programming
+* collective ownership
+* test-driven development
+* whole team
+* continuous integration
+* refactoring
+* small releases
+* planning game
+* design improvement
+* coding standards
+* simple design
+* system metaphor
+* sustainable pace
+
+<br />
+
+---
+
+## 운영체제
 
 ---
 
