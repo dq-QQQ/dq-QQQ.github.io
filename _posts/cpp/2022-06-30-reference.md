@@ -97,4 +97,16 @@ int &b = a;
 구조체 매개변수를 선언할 때 참조 연산자를 앞에 붙이면 된다.
 
 ```c++
-//예를 
+struct example
+{
+  int a;
+  int b;
+};
+
+void ex_func(example &ex);
+void ex_func2(const example &ex);
+
+```
+
+위와 같은 예시로 사용된다.
+
