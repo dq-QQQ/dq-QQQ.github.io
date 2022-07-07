@@ -77,3 +77,25 @@ c++ 언어에서 예외 클래스를 만들고 싶다면 부모 클래스로 사
 
 그러면 `what()`이라는 가상함수가 주어진다. 이 함수는 예외 종류에 맞는 에러 원인 메세지를 리턴한다.
 
+<br />
+
+---
+
+## stdexcept 클래스
+
+---
+
+stdexcept는 logic_error와 runtime_error클래스를 정의한다. 이것들은 exception에서 상속받는다.
+
+<br />
+
+---
+
+### logic_error
+
+---
+
+* `domain_error` : sin함수에 매개변수를 전달할 때 정의역이 -1 ~ 1이 아니라면 나는 에러
+* `invalid_argument` : 기대하지 않는 값이 함수에 전달되었을 때
+* `length_error` : 
+* `out_of_bounds` : 
