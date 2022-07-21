@@ -14,6 +14,8 @@ tags:
 
 SwiftUI의 뷰모델에서 많이 사용하는 ObservableObject에 대해서 알아보겠다.
 
+[애플 공식문서](https://developer.apple.com/documentation/combine/observableobject)
+
 <br />
 <br />
 
