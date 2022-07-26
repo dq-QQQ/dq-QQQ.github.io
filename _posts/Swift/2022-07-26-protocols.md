@@ -87,6 +87,26 @@ print(ho.toUpper()) // LEEKYUJIN
 
 ---
 
+# associatedtype
+
+---
+
+프로토콜에서 제네릭을 사용하고 싶으면 associatedtype을 사용하면된다.
+
+```swift
+protocol View {
+    associatedtype Body: View
+    var body: Self.Body { get }
+}
+```
+
+
+
+<br />
+<br />
+
+---
+
 # 프로토콜 확장
 
 ---
