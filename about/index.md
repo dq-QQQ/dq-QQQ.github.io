@@ -15,11 +15,11 @@ type: about
 - ⚡ Fun fact: I love to climbing.
 
 ```sh
- Subjects at university : NULL
+ Subjects at university : 
  ```
  
  ```sh
- Subjects at 42 SEOUL : making 2d game by using opengl library
+ Subjects at 42 SEOUL : 
  ```
  
  ```sh
