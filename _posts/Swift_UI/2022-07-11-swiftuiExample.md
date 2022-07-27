@@ -56,3 +56,25 @@ SwiftUI의 필수적인 요소들의 예제
 		<img src="https://user-images.githubusercontent.com/79088896/181154306-ecf5464d-8968-491d-b51d-02c4b60326ce.gif" class="w8" />
 	</a>
 </figure>
+
+
+<br />
+<br />
+<br />
+<br />
+
+---
+
+# @ObservedObject
+
+---
+
+## -> [예제 코드 및 설명](https://github.com/dq-QQQ/SwiftUI_Example/tree/main/%40ObservedObject) <-
+
+<br />
+
+<figure>
+	<a href="https://user-images.githubusercontent.com/79088896/181170959-1e166f47-4717-4eb6-a683-607444fbb794.gif">
+		<img src="https://user-images.githubusercontent.com/79088896/181170959-1e166f47-4717-4eb6-a683-607444fbb794.gif" class="w8" />
+	</a>
+</figure>
