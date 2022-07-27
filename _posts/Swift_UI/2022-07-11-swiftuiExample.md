@@ -25,7 +25,7 @@ SwiftUI의 필수적인 요소들의 예제
 
 ---
 
--> [예제 코드 및 설명](https://github.com/dq-qqq/SwiftUI_Example/tree/main/stack) <-
+## -> [예제 코드 및 설명](https://github.com/dq-qqq/SwiftUI_Example/tree/main/stack) <-
 
 <br />
 
