@@ -35,3 +35,24 @@ SwiftUI의 필수적인 요소들의 예제
 	</a>
 </figure>
 
+
+<br />
+<br />
+<br />
+<br />
+
+---
+
+# @State && @Binding
+
+---
+
+## -> [예제 코드 및 설명](https://github.com/dq-QQQ/SwiftUI_Example/tree/main/%40State) <-
+
+<br />
+
+<figure>
+	<a href="https://user-images.githubusercontent.com/79088896/181154306-ecf5464d-8968-491d-b51d-02c4b60326ce.gif">
+		<img src="https://user-images.githubusercontent.com/79088896/181154306-ecf5464d-8968-491d-b51d-02c4b60326ce.gif" class="w8" />
+	</a>
+</figure>
