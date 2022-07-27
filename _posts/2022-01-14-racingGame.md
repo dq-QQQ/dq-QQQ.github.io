@@ -19,7 +19,7 @@ tags:
 
 파일의 크기로 인해 우리가 수정한 파일들만 깃허브에 업로드하였다. 다운받고 기본 프로젝트에 넣으면 실행할 수 있다.
 
-[업로드 장소](https://github.com/SIE-KYIN/UE4_Racing_Game)
+[업로드 장소](https://github.com/dq-qqq/UE4_Racing_Game)
 
 
 <br />

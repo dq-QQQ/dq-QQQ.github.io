@@ -62,7 +62,7 @@ IOS 공부 어떻게 해야할까
 
 ---
 
-## [IOS PISICINE in 42seoul](https://github.com/SIE-KYIN/IOS-Piscine)
+## [IOS PISICINE in 42seoul](https://github.com/dq-qqq/IOS-Piscine)
 
 ---
 

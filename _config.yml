@@ -381,7 +381,7 @@ han: false
 # Disqus
 disqus:
   enable: false
-  shortname: sie-kyin-github-io-1
+  shortname: dq-qqq-github-io-1
   count: false
   # hide comments (visitors need to click to load the comments)
   # count need to be false when hide is true
