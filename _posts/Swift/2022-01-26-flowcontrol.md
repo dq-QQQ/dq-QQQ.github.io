@@ -124,7 +124,6 @@ C언어에서도 do-while은 잘안썻다.
 ---
 
 ```swift
-
 number: for i in 0...5 {
   print(i)
 }
@@ -144,3 +143,7 @@ var result: Int = 1
 for _ in 1...3 {
   result *= 10 // 1000
 }
+
+for i in stride(from:1, to:9, by:2) {} // 1, 3, 5, 7
+for j in stride(from:1, through:9, by:2) {} // 1, 3, 5, 7, 9
+```
