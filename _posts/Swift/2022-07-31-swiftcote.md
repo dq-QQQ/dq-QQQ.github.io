@@ -167,6 +167,8 @@ arr.removeAll() // 모두 제거
 
 ---
 
+[문자열 잘 정리해놓음](https://0urtrees.tistory.com/121)
+
 
 ```swift
 str.joined() // separator로 구분자 넣어줄 수 있음
