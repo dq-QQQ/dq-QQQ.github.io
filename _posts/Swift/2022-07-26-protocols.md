@@ -134,3 +134,63 @@ extension Int {
 }
 print(1.isEven)// false
 ```
+
+
+
+
+<br />
+<br />
+
+---
+
+# Identifiable Protocol
+
+---
+
+값 타입은 현재 상태를 통해 비교를 한다. 하지만 상태는 항상 변할 수 있으며 고유의 식별자가 없으면 다른 것을 같다고 인식할 수 있다.
+
+참조타입은 상태의 변화와 관계없이 비교한다. 그러나 여러 프로세스에 분산되어 처리되는 경우와 같이 메모리 주소만으로만으로 완벽하게 식별할 수 없다.
+
+따라서 Entity(개체)에 상태와는 무관한 식별자를 제공하기 위해 Identifiable Protocol을 사용한다.
+
+공부하면서 느낀점은 데이터베이스의 Primary Key와 같은 개념 같았다.
+
+이 프로토콜은 Hashable 프로토콜을 준수하는 id 프로퍼티 하나만 가진다.
+
+```swift
+protocol Identifiable {
+  associatedtype ID: Hashable
+  var id: Self.Id { get }
+}
+```
+
+이 프로토콜을 채택한 타입은 고유한 개체를 구분하기 위해 비교 알고리즘에 이 id를 사용한다.
+
+id는 다음 특징을 가질 수 있다.
+
+* UUID와 같이 유일성을 보장한다.
+* DB의 record key와 같이 환경 별로 유일하다.
+* global incrementing integer처럼 프로세스의 lifetime에는 유일하다.
+* object identifiers처럼 객체의 lifetime에는 유일하다.
+* collection indices처럼 현재 collection에서는 유일하다.
+
+id는 보통 Int, String, UUID, URL등의 타입을 사용한다.
+
+```swift
+//그냥 id 사용
+struct Example: Identifiable {
+  let id: UUID = UUID()
+}
+
+// 다른 변수를 id로 채택
+struct Example: Identifiable {
+  var id: UUID { uuid }
+  var uuid = UUID()
+}
+
+struct Example {
+  var id: UUID
+}
+extension Example: Identifiable {}
+```
+
