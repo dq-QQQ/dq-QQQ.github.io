@@ -180,3 +180,34 @@ NavigationView { ... }
   .navigationViewSytle(sytle)
 ```
 
+<br />
+<br />
+
+---
+
+# 네비게이션 뷰 타이틀 색 입히기
+
+---
+
+내가 지정하고 싶은 타이틀을 색 입혀주면 된다.
+
+```swift
+struct FruitMartApp: App {
+    
+    init() {
+        UINavigationBar.appearance().largeTitleTextAttributes = [
+            .foregroundColor: UIColor(named: "peach")!]
+        
+        UINavigationBar.appearance().titleTextAttributes = [
+            .foregroundColor: UIColor(named: "peach")!]
+    }
+    
+    var body: some Scene {
+        WindowGroup {
+            Home()
+                .environmentObject(ProductViewModel())
+                .environmentObject(OrderViewModel())
+        }
+    }
+}
+```

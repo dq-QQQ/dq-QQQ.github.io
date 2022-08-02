@@ -399,34 +399,3 @@ Image(systemName: "star.circle").font(.body)
 Image(systemName: "star.circle").font(Font.title.weight(.black))
 ```
 
-
-<br />
-<br />
-
----
-
-# 커스텀 수정자
-
----
-
-만약 뷰에 자주 적용되는 수정자를 세팅하고 싶을 때 유용하다.
-
-아래의 코드처럼 들어오는 content에 따라 커스텀 수정자를 붙여준다.
-
-커스텀 수정자는 ViewModifier 프로토콜을 따르는 구조체로 선언된다.
-
-그러므로 필요한 곳에서 modifier() 메서드를 통해 적용할 수 있다.
-
-```swift
-struct StandardTitle: ViewModifier {
-  func body(content: Content) -> some View {
-    content
-      .font(.largeTitle)
-      .background(Color.white)
-  }
-}
-
-Text("text")
-  .modifier(StandardTitle())
-```
-
