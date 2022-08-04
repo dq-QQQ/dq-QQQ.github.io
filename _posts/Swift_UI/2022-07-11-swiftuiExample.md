@@ -129,3 +129,25 @@ SwiftUI의 필수적인 요소들의 예제
 	</a>
 </figure>
 
+
+<br />
+<br />
+<br />
+<br />
+
+---
+
+# FruitMart
+
+---
+
+## -> [예제 코드 및 설명](https://github.com/dq-QQQ/SwiftUI_Example/tree/main/FruitMart) <-
+
+<br />
+
+<figure>
+	<a href="https://user-images.githubusercontent.com/79088896/182880330-aef4d1e6-bcc7-4c41-9d19-7c094f344364.gif">
+		<img src="https://user-images.githubusercontent.com/79088896/182880330-aef4d1e6-bcc7-4c41-9d19-7c094f344364.gif" class="w8" />
+	</a>
+</figure>
+
