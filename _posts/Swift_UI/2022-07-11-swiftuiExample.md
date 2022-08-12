@@ -173,3 +173,27 @@ SwiftUI의 필수적인 요소들의 예제
 	</a>
 </figure>
 
+
+<br />
+<br />
+<br />
+<br />
+
+---
+
+# Widget_TodoList
+
+---
+
+widget구현은 실패
+
+## -> [예제 코드 및 설명](https://github.com/dq-QQQ/SwiftUI_Example/tree/main/Widget) <-
+
+<br />
+
+<figure>
+	<a href="https://user-images.githubusercontent.com/79088896/184295492-5fabc015-37ea-4002-8256-ee0f07c51e15.gif">
+		<img src="https://user-images.githubusercontent.com/79088896/184295492-5fabc015-37ea-4002-8256-ee0f07c51e15.gif" class="w8" />
+	</a>
+</figure>
+
