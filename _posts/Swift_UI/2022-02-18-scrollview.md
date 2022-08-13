@@ -145,3 +145,24 @@ let colors: [Color] = [.red, .green, .blue]
         }
     }
 ```
+
+
+
+<br />
+<br />
+
+---
+
+# 가로 스크롤
+
+---
+
+가로스크롤은 꼭 hstack을 감싸야 생각한대로 작동한다.
+
+```swift
+ScrollView(.horizontal) {
+    HStack {
+        ~~~
+    }
+}
+```
