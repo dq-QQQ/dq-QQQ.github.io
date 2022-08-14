@@ -18,15 +18,61 @@ tags:
 
 그냥 생각난 아이디어들
 
-그런것들을 적어놨다가 이동시간에 찾아보려고한다.
+그런것들을 적어놨다가 학교왔다갔다, 친구왔다갔다 이동시간에 찾아보려고한다.
 
-학교왔다갔다, 친구만나러 왔다갔다 시간 너무 아깝다.
 
 <br />
 <br />
 
 ---
 
-# Apple Login
+# Await Async
+
+<br />
+<br />
 
 ---
+
+# @MainActor
+
+<br />
+<br />
+
+---
+
+# Firebase 함수, 메서드들
+
+RemoteConfigSettings
+
+RemoteConfig
+
+
+
+<br />
+<br />
+
+---
+
+# Await Async
+
+<br />
+<br />
+
+---
+
+# stringValue
+
+
+<br />
+<br />
+
+---
+
+# task modifier
+
+<br />
+<br />
+
+---
+
+# sheet modifier
