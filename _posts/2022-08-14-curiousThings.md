@@ -76,3 +76,24 @@ RemoteConfig
 ---
 
 # sheet modifier
+
+<br />
+<br />
+
+---
+
+# Coredata vs SQLite vs Realm
+
+<br />
+<br />
+
+---
+
+# Scanner
+
+<br />
+<br />
+
+---
+
+# BigInt
