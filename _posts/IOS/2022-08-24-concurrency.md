@@ -1,7 +1,7 @@
 ---
 title: iOS의 Asynchronous Programming
 categories: 
-  - OS
+  - iOS
 excerpt: "iOS에서 비동기 프로그래밍을 어떻게  알아보자:)"
 date:   2022-08-24
 tags:
