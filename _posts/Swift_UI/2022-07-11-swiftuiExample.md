@@ -31,7 +31,7 @@ SwiftUI의 필수적인 요소들의 예제
 
 ---
 
-## -> [예제 코드 및 설명](https://github.com/dq-qqq/SwiftUI_Example/tree/main/stack) <-
+## -> [예제 코드](https://github.com/dq-qqq/SwiftUI_Example/tree/main/stack) <-
 
 <br />
 
@@ -53,7 +53,7 @@ SwiftUI의 필수적인 요소들의 예제
 
 ---
 
-## -> [예제 코드 및 설명](https://github.com/dq-QQQ/SwiftUI_Example/tree/main/%40State) <-
+## -> [예제 코드](https://github.com/dq-QQQ/SwiftUI_Example/tree/main/%40State) <-
 
 <br />
 
@@ -75,7 +75,7 @@ SwiftUI의 필수적인 요소들의 예제
 
 ---
 
-## -> [예제 코드 및 설명](https://github.com/dq-QQQ/SwiftUI_Example/tree/main/%40ObservedObject) <-
+## -> [예제 코드](https://github.com/dq-QQQ/SwiftUI_Example/tree/main/%40ObservedObject) <-
 
 <br />
 
@@ -98,7 +98,7 @@ SwiftUI의 필수적인 요소들의 예제
 
 ---
 
-## -> [예제 코드 및 설명](https://github.com/dq-QQQ/SwiftUI_Example/tree/main/@Environment) <-
+## -> [예제 코드](https://github.com/dq-QQQ/SwiftUI_Example/tree/main/@Environment) <-
 
 <br />
 
@@ -119,7 +119,7 @@ SwiftUI의 필수적인 요소들의 예제
 
 ---
 
-## -> [예제 코드 및 설명](https://github.com/dq-QQQ/SwiftUI_Example/tree/main/%40ViewBuilder) <-
+## -> [예제 코드](https://github.com/dq-QQQ/SwiftUI_Example/tree/main/%40ViewBuilder) <-
 
 <br />
 
@@ -141,7 +141,7 @@ SwiftUI의 필수적인 요소들의 예제
 
 ---
 
-## -> [예제 코드 및 설명](https://github.com/dq-QQQ/SwiftUI_Example/tree/main/FruitMart) <-
+## -> [예제 코드](https://github.com/dq-QQQ/SwiftUI_Example/tree/main/FruitMart) <-
 
 <br />
 
@@ -163,7 +163,7 @@ SwiftUI의 필수적인 요소들의 예제
 
 ---
 
-## -> [예제 코드 및 설명](https://github.com/dq-QQQ/SwiftUI_Example/tree/main/ExpandingList) <-
+## -> [예제 코드](https://github.com/dq-QQQ/SwiftUI_Example/tree/main/ExpandingList) <-
 
 <br />
 
@@ -187,7 +187,7 @@ SwiftUI의 필수적인 요소들의 예제
 
 widget구현은 실패
 
-## -> [예제 코드 및 설명](https://github.com/dq-QQQ/SwiftUI_Example/tree/main/Widget) <-
+## -> [예제 코드](https://github.com/dq-QQQ/SwiftUI_Example/tree/main/Widget) <-
 
 <br />
 
