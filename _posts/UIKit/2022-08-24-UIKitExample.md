@@ -152,3 +152,26 @@ UIKit 필수적인 요소들의 예제
 		<img src="https://user-images.githubusercontent.com/79088896/186611664-b0e8132b-1fe8-4d20-a49a-5d27dab84833.gif" class="w8" />
 	</a>
 </figure>
+
+
+
+<br />
+<br />
+<br />
+<br />
+
+---
+
+# Book_Core Data
+
+---
+
+## -> [예제 코드](https://github.com/dq-QQQ/UIKit_Example/tree/main/Book-CoreData/Book-CoreData) <-
+
+<br />
+
+<figure>
+	<a href="https://user-images.githubusercontent.com/79088896/187020915-73bafa36-faa7-4818-a43c-f4d23a94fd95.gif">
+		<img src="https://user-images.githubusercontent.com/79088896/187020915-73bafa36-faa7-4818-a43c-f4d23a94fd95.gif" class="w8" />
+	</a>
+</figure>
