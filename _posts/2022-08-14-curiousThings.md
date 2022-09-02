@@ -159,3 +159,19 @@ NavigationView가 iOS16부터 없어진다고 하는데 @available(iOS 16.0, *)�
 
 # ForEach의 파라메터로 제네릭 넣기 왜안됨
 
+
+
+<br />
+<br />
+
+---
+
+# some View 리턴하는 Function안에서는 비동기 처리 못하는듯?? 왜지
+
+
+<br />
+<br />
+
+---
+
+# 왜 스크롤 뷰안에서 리스트 사용 못하냐
