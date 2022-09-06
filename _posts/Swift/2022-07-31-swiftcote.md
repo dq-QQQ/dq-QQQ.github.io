@@ -215,6 +215,24 @@ str.index(str.startIndex, offsetBy: 1) // 두번째
 str.index(before: str.endIndex) // 마지막
 ```
 
+```
+
+<br />
+
+---
+
+## 문자열 자르기
+
+---
+
+```swift
+let str = "Swift hoho"
+let range = str.startIndex..<str.index(str.startIndex, offsetBy: 5)
+
+let subStr = str[range]
+```
+
+
 
 <br />
 <br />
