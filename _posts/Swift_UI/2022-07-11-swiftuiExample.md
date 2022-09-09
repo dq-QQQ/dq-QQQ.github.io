@@ -197,3 +197,27 @@ widget구현은 실패
 	</a>
 </figure>
 
+
+<br />
+<br />
+<br />
+<br />
+
+---
+
+# CoreData in SwiftUI
+
+---
+
+
+
+## -> [예제 코드](https://github.com/dq-QQQ/SwiftUI_Example/tree/main/CDSwiftUI) <-
+
+<br />
+
+<figure>
+	<a href="https://user-images.githubusercontent.com/79088896/189393698-1ac9a15d-b0b7-49fe-bfb9-872095decea0.gif">
+		<img src="https://user-images.githubusercontent.com/79088896/189393698-1ac9a15d-b0b7-49fe-bfb9-872095decea0.gif" class="w8" />
+	</a>
+</figure>
+
