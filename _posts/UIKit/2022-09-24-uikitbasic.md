@@ -101,3 +101,26 @@ UIApplicationMain() 함수가 생성하는 UIApplication은 앱의 본체라고 
 
 ---
 
+iOS 앱의 객체 관계는 MVC 패턴에 기반한다. 모델 - 뷰 - 컨트롤러로 이어지는 세개의 핵심 구조를 이용하여 앱을 설계한다.
+
+모델은 데이터를 담당하고, 뷰는 데이터에 대한 화면 표현을 담당하며, 컨트롤러는 모델과 뷰 사이에 위치하여 데이터를 가공하여 뷰로 전달하고,
+
+뷰에서 발생하는 이벤트를 입력받아 처리하는 역할을 담당한다. 아래는 MVC패턴과 객체들의 상호작용의 관계를 나타낸 그림이다.
+
+<br />
+
+<figure>
+	<a href="https://user-images.githubusercontent.com/79088896/192084330-2d74bc5d-56c1-4090-b576-efbf4e2fcf01.jpg">
+		<img src="https://user-images.githubusercontent.com/79088896/192084330-2d74bc5d-56c1-4090-b576-efbf4e2fcf01.jpg" class="w8" />
+	</a>
+</figure>
+
+<br />
+
+<br />
+
+---
+
+# 앱의 상태 변화
+
+---
