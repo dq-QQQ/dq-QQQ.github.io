@@ -203,6 +203,13 @@ NavigationView가 iOS16부터 없어진다고 하는데 @available(iOS 16.0, *)�
 
 # UUID
 
+<br />
+<br />
+
+---
+
+# framework vs library
+
 푸시알림
 동아리
 분야별 주요 기술 스택
