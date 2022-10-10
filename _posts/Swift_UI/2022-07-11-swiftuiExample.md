@@ -245,3 +245,27 @@ widget구현은 실패
 	</a>
 </figure>
 
+
+<br />
+<br />
+<br />
+<br />
+
+---
+
+# 토스트메세지
+
+---
+
+
+
+## -> [예제 코드](https://github.com/dq-QQQ/SwiftUI_Example/tree/main/toastMessage) <-
+
+<br />
+
+<figure>
+	<a href="https://user-images.githubusercontent.com/79088896/194887452-4ed3d9fd-119a-4adf-9b3c-f65fa80cb7bf.gif">
+		<img src="https://user-images.githubusercontent.com/79088896/194887452-4ed3d9fd-119a-4adf-9b3c-f65fa80cb7bf.gif" class="w8" />
+	</a>
+</figure>
+
