@@ -264,8 +264,8 @@ widget구현은 실패
 <br />
 
 <figure>
-	<a href="https://user-images.githubusercontent.com/79088896/194887452-4ed3d9fd-119a-4adf-9b3c-f65fa80cb7bf.gif">
-		<img src="https://user-images.githubusercontent.com/79088896/194887452-4ed3d9fd-119a-4adf-9b3c-f65fa80cb7bf.gif" class="w8" />
+	<a href="https://user-images.githubusercontent.com/79088896/194887949-149d721f-dca6-44f0-8a22-560f236b79c2.gif">
+		<img src="https://user-images.githubusercontent.com/79088896/194887949-149d721f-dca6-44f0-8a22-560f236b79c2.gif" class="w8" />
 	</a>
 </figure>
 
