@@ -217,3 +217,10 @@ NavigationView가 iOS16부터 없어진다고 하는데 @available(iOS 16.0, *)�
 시뮬레이터 D9856433-77D8-49B6-A321-D1CE0CFE1AE9
 
 내폰 4489374E-C683-4480-8651-6EBB645937C9
+
+
+<figure>
+	<a href="https://user-images.githubusercontent.com/79088896/197379499-b3022ccd-5775-439c-b1ce-128710abf8f5.mov">
+		<img src="https://user-images.githubusercontent.com/79088896/197379499-b3022ccd-5775-439c-b1ce-128710abf8f5.mov" class="w8" />
+	</a>
+</figure>
