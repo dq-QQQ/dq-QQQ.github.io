@@ -87,6 +87,12 @@ Scene은 디바이스에서 실행중인 앱 UI의 인스턴스이다. 사용자
 
 UIKit은 언제든지 자원의 요청하여 background나 suspended Scene의 연결을 끊고 Unattached 상태로 되돌릴 수 있다.
 
+<br />
+<br />
+
+---
+
+# UIKit View Life Cycle
 
 <br />
 
@@ -95,6 +101,14 @@ UIKit은 언제든지 자원의 요청하여 background나 suspended Scene의 �
 		<img src="https://github.com/dq-QQQ/dq-QQQ.github.io/assets/79088896/fa961b2a-4b21-4e9b-82ee-a86a0538b23d" class="w8" />
 	</a>
 </figure>
+
+* `loadView` : 뷰를 만들고 메모리에 올린다
+* `viewDidLoad` : ViewController가 메모리에 로드된 후 한번 호출된다.
+* `viewWillApper` : 뷰가 생성되기 전에 실행된다. 다른 뷰에 갔다가 다시 돌아오고 싶을 때 사용한다.
+* `viewDidAppear` : 뷰가 생성되고 샐행된다. 데이터를 화면에 표시하거나 애니메이션같은 것을 사용한다.
+* `viewWillDisappear` : 뷰가 사라지기 전에 실행된다
+* `viewDidDisappear` : 뷰가 사라지고 실행된다.
+* `viewDidUnload` : 메모리에서 해제될때 실행된다.
 
 
 
@@ -106,4 +120,57 @@ UIKit은 언제든지 자원의 요청하여 background나 suspended Scene의 �
 
 # SwiftUI App Life Cycle
 
-SwiftUI는 Scene delegate
+SwiftUI는 Scene delegate과 AppDelegate이 없다 그렇다면 어떻게 앱을 실행하고 종료할까?
+
+SwiftUI 프로그램을 보면 `XXXXApp.swift`의 파일이 자동으로 생긴다.
+
+```swift
+@main
+struct tmpswiftuiApp: App {
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+        }
+    }
+}
+```
+
+@main은 해당 구조체가 엔트리포인트임을 알려주고 프로그램이 이 구조체부터 실행되게 해주는 프로퍼티 래퍼이다.
+
+이로써 해당 구조체는 Top level code에 위치하게 된다.
+
+두번째 줄의 의미는 해당 구조체는 App 프로토콜을 채택하고 있다는 것이다. 
+
+이 프로토콜은 시스템이 앱을 실행하기 위해 호출하는 main() 메서드의 기본 구현을 제공하는 것이다.
+
+이 프로토콜은 body라는 프로퍼티가 요구되며 Scene 프로토콜을 준수하는 인스턴스를 반환해야한다.
+
+각각의 Scene은 뷰 계층의 루트가 되는 뷰와 시스템에 의해 관리되는 생명주기를 가지고 있다
+
+SwiftUI는 문서나 설정을 보여주는 것과 같은 흔한 시나리오를 다루기 위해 몇가지 scene 타입을 제공한다.
+
+Scene은 사용자에게 표시하고 싶은 뷰 계층구조의 컨테이너 역할을 한다.
+
+시스템은 플랫폼에 대한 적합성과 앱의 현재 상태의 의존성에 따라 언제 어떻게 뷰계층구조를 UI에 표시할지 결정한다.
+
+예를 들어 아이폰은 화면에 멀티창을 못하지만 맥북이나 아이패드에서는 가능하다.
+
+some은 불명확타입으로 반환형이 명확하지 않지만 해당 프로토콜을 따르는 친구야!라는 의미이다.
+
+이 타입을 사용하면 컴파일러가 실제 반환형으로 바꿔서 실행한다.
+
+`WindowGroup`은 아이패드나 맥북에서처럼 다중 창을 나타낼 때 뷰를 여러개 선언해서 사용한다.
+
+앱의 뷰 계층구조의 컨테이너라고 할 수 있다. 그래서 앱의 첫번째 뷰를 이곳에 선언한다.
+
+<br />
+<br />
+
+---
+
+# SwiftUI View Life Cycle
+
+* `onAppear` : view가 나타날 때 실행된다. viewDidAppear와 동일하다
+* `onDisappear` : view가 사라질 때 실행된다. viewDidDIsappear와 동일하다
+* `task` : view가 나타날 때 실행되지만 비동기 작업을 한다. Modifier의 수명과 View의 수명이 동일하다.
+
