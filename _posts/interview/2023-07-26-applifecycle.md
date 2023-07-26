@@ -87,6 +87,12 @@ Scene은 디바이스에서 실행중인 앱 UI의 인스턴스이다. 사용자
 
 UIKit은 언제든지 자원의 요청하여 background나 suspended Scene의 연결을 끊고 Unattached 상태로 되돌릴 수 있다.
 
+1. 사용자가 앱을 실행한다.
+2. 엔트리 포인트인 @UIApplication 어노테이션을 찾아 해당 클래스를 실행한다.
+3. didFinishLaunching의 파라메타를 가진 application 메서드가 실행된다.
+4. 시스템 프레임워크의 이벤트 루프가된다. 이때 IBAction, IBOulet에 의해 작성한 이벤트핸들로 커스텀 코드를 실행한다.
+5. 앱의 사용이 종료되면 applicationWillTerminate 메서드가 호출된다.
+
 <br />
 <br />
 
