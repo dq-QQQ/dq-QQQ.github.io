@@ -16,6 +16,8 @@ tags:
 
 # iOS
 
+앱 퍼포먼스 향상
+
 assign vs weak
 Bounds 와 Frame 의 차이점을 설명하시오.
 AppDelegate 에서 앱의 상태 변화에 따라 호출되는 함수에 대해 명확히 설명할 수 있나요 ?
