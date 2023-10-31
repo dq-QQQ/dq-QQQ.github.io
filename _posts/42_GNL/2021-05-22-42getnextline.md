@@ -1,7 +1,7 @@
 ---
 title: Get_Next_Line
 categories: 
-   - 42_GNL
+   - 42seoul
 excerpt: "파일 입출력을 이용해서 파일을 개행단위로 나눠보자:)"
 date:   2021-05-22 21:13:51 +0900
 tags:

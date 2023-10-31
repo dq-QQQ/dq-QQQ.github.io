@@ -1,7 +1,7 @@
 ---
 title: Signal 함수와 인터럽트
 categories: 
-  - 42_MiniShell
+  - 42seoul
 excerpt: "signal 함수와 인터럽트에 대해 알아보자:)"
 date:   2022-03-16
 tags:

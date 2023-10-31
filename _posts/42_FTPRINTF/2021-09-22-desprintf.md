@@ -1,7 +1,7 @@
 ---
 title: 가변인자와 형식지정자
 categories: 
-  - 42_PRINTF
+  - 42seoul
 excerpt: "가변인자와 printf 함수의 형식지정자에 대해서 알아보자:)"
 date:   2021-09-22
 tags:

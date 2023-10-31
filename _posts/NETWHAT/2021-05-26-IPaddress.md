@@ -1,7 +1,7 @@
 ---
 title: What is IP address
 categories: 
-  - 42_NETWHAT
+  - 42seoul
 excerpt: "IP address에 대해 알아보자:)"
 date:   2021-05-26
 tags:
