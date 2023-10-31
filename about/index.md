@@ -13,7 +13,7 @@ type: about
 - 📚 I’m currently learning at university and 42seoul.
 - 💪🏼 Future Goals: be an IOS Developer
 - ⚡ Fun fact: I love to climbing.
-떼잉
+떼
 
 ```sh
  Subjects at university : 
