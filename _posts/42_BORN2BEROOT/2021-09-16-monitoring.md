@@ -3,7 +3,7 @@ title: 리눅스 모니터링 스크립트
 date: 2021-09-16
 excerpt: "리눅스의 모니터링 스크립트를 만들어보자:)"
 categories:
-- 42_BORN2BEROOT
+- 42
 tags:
 - 42seoul
 - monitoring
