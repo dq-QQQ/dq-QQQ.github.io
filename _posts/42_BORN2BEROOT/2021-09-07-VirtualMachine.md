@@ -3,7 +3,7 @@ title: 가상머신
 date: 2021-09-07
 excerpt: "가상머신이 뭘까?:)"
 categories:
-- 42
+- 42seoul
 tags:
 - 42seoul
 - VM

@@ -3,7 +3,7 @@ title: Born2beroot
 date: 2021-08-16
 excerpt: "VirtualBox를 이용해서 데비안 리눅스를 설치하고 나만의 리눅스 환경을 만들어보자:)"
 categories:
-- 42
+- 42seoul
 tags:
 - 42seoul
 ---
