@@ -1,7 +1,7 @@
 ---
 title: JSP 내장객체
 categories: 
-  - webserver
+  - CS
 excerpt: "JSP 내장객체에 대해서 공부해보자:)"
 date: 2022-04-20
 tags:

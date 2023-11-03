@@ -1,7 +1,7 @@
 ---
 title: C++의 예외
 categories:
-  - Language
+  - C++
 excerpt: "cpp 예외에 대해 공부해보자:)"
 date: 2022-07-07
 tags:

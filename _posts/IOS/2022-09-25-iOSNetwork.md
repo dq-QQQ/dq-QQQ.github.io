@@ -5,8 +5,6 @@ excerpt: "iOS에서 사용할 수 있는 네트워크 통신의 종류에 대해
 categories:
 - iOS
 tags:
-- UIKit
-- SwiftUI
 - iOS
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: C++의 참조
 categories:
-  - Language
+  - C++
 excerpt: "cpp 참조에 대해 공부해보자:)"
 date: 2022-06-30
 tags:

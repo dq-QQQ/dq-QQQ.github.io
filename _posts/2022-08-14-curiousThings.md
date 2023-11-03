@@ -1,7 +1,7 @@
 ---
 title: 궁금한 것
 categories:
-  - question 
+  - etc 
 excerpt: "궁금한것들:)"
 date: 2022-08-14
 tags:

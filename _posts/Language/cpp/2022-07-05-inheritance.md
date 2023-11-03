@@ -1,7 +1,7 @@
 ---
 title: C++의 상속
 categories:
-  - Language
+  - C++
 excerpt: "cpp 상속에 대해 공부해보자:)"
 date: 2022-07-05
 tags:

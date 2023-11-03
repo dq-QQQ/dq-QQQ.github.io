@@ -1,7 +1,7 @@
 ---
 title: JSP와 자바 빈즈
 categories: 
-  - webserver
+  - CS
 excerpt: "JSP 빈즈에 대해서 공부해보자:)"
 date: 2022-04-21
 tags:
