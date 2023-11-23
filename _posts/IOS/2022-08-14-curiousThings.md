@@ -162,7 +162,25 @@ RemoteConfig
 
 ---
 
+swift와 옵젝시 컴파일 방법
+
 https://blog.enyou.net/ko/archives/1282
+
+동시성
+
+https://developer.apple.com/library/archive/documentation/General/Conceptual/ConcurrencyProgrammingGuide/Introduction/Introduction.html
+
+
+지연
+
+https://songios.tistory.com/30 
+
+
+컴파일러
+https://theswiftdev.com/the-swift-compiler-for-beginners/
+
+
+
 
 <br />
 <br />
@@ -170,3 +188,17 @@ https://blog.enyou.net/ko/archives/1282
 ---
 
 스위프트에서 cpp 사용하기
+
+<br />
+<br />
+
+---
+
+pencilkit에서 손으로 쓰는 글씨와 펜으로 쓰는 글씨는 다른가?
+
+<br />
+<br />
+
+---
+
+일반 숫자 입력과 드래그 숫자 입력은 다른가?
