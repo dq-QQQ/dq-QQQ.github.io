@@ -16,12 +16,12 @@
     &:hover { color: $gainsboro; }
   }
 
-  @include tablet() {
+  /*@include tablet() {
     display: none !important;
   }
   @include mobile() {
     display: none !important;
-  }
+  }*/
 }
 
 .sidebar-inner {
