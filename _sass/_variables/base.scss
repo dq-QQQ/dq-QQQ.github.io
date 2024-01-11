@@ -91,7 +91,7 @@ $font-weight-bolder       : 700;
 
 
 // Font size
-$font-size-base           : 20px;
+$font-size-base           : 30px;
 $font-size-small          : $font-size-base - 2px;
 $font-size-smaller        : $font-size-base - 4px;
 $font-size-large          : $font-size-base + 2px;
@@ -107,7 +107,7 @@ $font-size-headings-large   : $font-size-headings-base + $font-size-headings-ste
 $font-size-headings-larger  : $font-size-headings-large + $font-size-headings-step;
 
 // Global line height
-$line-height-base           : 2;
+$line-height-base           : 1.8;
 $line-height-code-block     : 1.6;  // Can't be less than 1.3
 
 
