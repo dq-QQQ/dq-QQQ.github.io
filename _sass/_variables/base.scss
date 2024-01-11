@@ -91,7 +91,7 @@ $font-weight-bolder       : 700;
 
 
 // Font size
-$font-size-base           : 30px;
+$font-size-base           : 24px;
 $font-size-small          : $font-size-base - 2px;
 $font-size-smaller        : $font-size-base - 4px;
 $font-size-large          : $font-size-base + 2px;
@@ -100,7 +100,7 @@ $font-size-larger         : $font-size-base + 4px;
 
 // Headings font size
 $font-size-headings-step    : 2px;
-$font-size-headings-base    : 24px;
+$font-size-headings-base    : 30px;
 $font-size-headings-small   : $font-size-headings-base - $font-size-headings-step;
 $font-size-headings-smaller : $font-size-headings-small - $font-size-headings-step;
 $font-size-headings-large   : $font-size-headings-base + $font-size-headings-step;
@@ -142,7 +142,7 @@ $table-row-hover-bg-color       : $whitesmoke;
 // Code & Code Blocks
 // --------------------------------------------------
 $code-font-family               : $font-family-monospace;
-$code-font-size                 : 13px;
+$code-font-size                 : 20px;
 $code-font-size                 : if(type-of(jekyll-config('font.codes.size')) == 'number', jekyll-config('font.codes.size') + px, $code-font-size);
 $code-border-radius             : 3px;
 $code-foreground                : $black-light;
@@ -196,7 +196,7 @@ $content-desktop                : 700px;
 $content-desktop-large          : 900px;
 $content-desktop-padding        : 40px;
 
-$sidebar-desktop                : 240px;
+$sidebar-desktop                : 400px;
 
 $footer-height                  : 50px;
 
@@ -272,7 +272,7 @@ $sidebar-nav-hover-color              : $whitesmoke;
 $sidebar-highlight                    : $blue-bright;
 
 $site-author-image-padding            : 2px;
-$site-author-image-width              : 96px;
+$site-author-image-width              : 200px;
 $site-author-image-height             : auto;
 $site-author-image-border-width       : 2px;
 $site-author-image-border-color       : $black-dim;
@@ -282,15 +282,15 @@ $site-author-name-color               : $blue-bright;
 $site-author-name-align               : center;
 $site-author-name-weight              : normal;
 
-$site-description-font-size           : 14px;
+$site-description-font-size           : 24px;
 $site-description-color               : $grey-dark;
 $site-description-margin-top          : 5px;
 $site-description-align               : center;
 
 $site-state-align                     : center;
-$site-state-item-count-font-size      : 18px;
+$site-state-item-count-font-size      : 24px;
 $site-state-item-count-color          : inherit;
-$site-state-item-name-font-size       : 13px;
+$site-state-item-name-font-size       : 18px;
 $site-state-item-name-color           : inherit;
 $site-state-item-border-color         : $black-dim;
 
