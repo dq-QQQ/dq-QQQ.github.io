@@ -1,5 +1,6 @@
 .sidebar-toggle {
   position: fixed;
+  display: none !important;
   right: $b2t-position-right;
   bottom: 45px;
   width: 14px;
