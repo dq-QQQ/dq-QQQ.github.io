@@ -103,7 +103,7 @@ $(document).ready(function () {
       this.showSidebar();
     },
     clickHandler: function () {
-      this.isSidebarVisible ? this.hideSidebar() : this.showSidebar();
+      
       this.isSidebarVisible = !this.isSidebarVisible;
     },
     mouseEnterHandler: function () {
