@@ -98,6 +98,9 @@ $(document).ready(function () {
         })
         .on('sidebar.isHiding', function () {
         });
+
+      // Show sidebar on page load
+      this.showSidebar();
     },
     clickHandler: function () {
       this.isSidebarVisible ? this.hideSidebar() : this.showSidebar();
