@@ -229,7 +229,7 @@ social_icons:
 
 # Sidebar Avatar
 # in directory: /assets/images/avatar.gif
-avatar: /assets/images/myprofile.png
+avatar: /assets/logo.png
 
 
 # Table Of Contents in the Sidebar
@@ -266,7 +266,7 @@ sidebar:
   #display: remove
 
   # Sidebar offset from top menubar in pixels.
-  offset: 12
+  offset: 40
   offset_float: 0
 
   # Back to top in sidebar
