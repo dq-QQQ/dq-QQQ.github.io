@@ -91,7 +91,7 @@ $font-weight-bolder       : 700;
 
 
 // Font size
-$font-size-base           : 24px;
+$font-size-base           : 20px;
 $font-size-small          : $font-size-base - 2px;
 $font-size-smaller        : $font-size-base - 4px;
 $font-size-large          : $font-size-base + 2px;
@@ -158,7 +158,7 @@ $btn-font-weight                : normal;
 $btn-default-radius             : 0;
 $btn-default-bg                 : $black-deep;
 $btn-default-color              : white;
-$btn-default-font-size          : 14px;
+$btn-default-font-size          : 24px;
 $btn-default-border-width       : 2px;
 $btn-default-border-color       : $black-deep;
 $btn-default-hover-bg           : white;
@@ -196,7 +196,7 @@ $content-desktop                : 700px;
 $content-desktop-large          : 900px;
 $content-desktop-padding        : 40px;
 
-$sidebar-desktop                : 400px;
+$sidebar-desktop                : 700px;
 
 $footer-height                  : 50px;
 
@@ -223,12 +223,12 @@ $brand-color                    : white;
 $brand-hover-color              : white;
 $brand-bg                       : $black-deep;
 
-$logo-font-size                 : 20px;
+$logo-font-size                 : 30px;
 $logo-font-size                 : if(type-of(jekyll-config('font.logo.size')) == 'number', jekyll-config('font.logo.size') + px, $logo-font-size);
 
-$site-subtitle-color            : $grey-dark;
-$subtitle-font-size             : 13px;
-$subtitle-color                 : $grey-dark;
+$site-subtitle-color            : $blue-bright;
+$subtitle-font-size             : 23px;
+$subtitle-color                 : $blue-bright;
 
 // Menu
 $menu-link-border               : transparent;
@@ -317,7 +317,7 @@ $b2t-color                    : white;
 $b2t-bg-color                 : $black-deep;
 
 // full-image
-$full-image-width             : 110%;
+$full-image-width             : 150%;
 $full-image-margin-horizontal : -5%;
 $full-image-margin-vertical   : 25px;
 
