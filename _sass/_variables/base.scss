@@ -56,10 +56,6 @@ $selection-color              : white;
 // --------------------------------------------------
 
 
-@function get_font_family($config) {
-  $custom_family : jekyll-config('font.' + $config + '.family');
-  @return if(type-of($custom_family) == 'string', $custom_family, null);
-}
 
 @font-face {
   font-family: 'custom-font';
