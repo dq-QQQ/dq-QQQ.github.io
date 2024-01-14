@@ -226,9 +226,9 @@ $brand-bg                       : $black-deep;
 $logo-font-size                 : 30px;
 $logo-font-size                 : if(type-of(jekyll-config('font.logo.size')) == 'number', jekyll-config('font.logo.size') + px, $logo-font-size);
 
-$site-subtitle-color            : $blue-bright;
+$site-subtitle-color            : $black-light;
 $subtitle-font-size             : 23px;
-$subtitle-color                 : $blue-bright;
+$subtitle-color                 : $black-light;
 
 // Menu
 $menu-link-border               : transparent;
