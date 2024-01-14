@@ -1,7 +1,7 @@
 ---
 title: APP & View Life Cycle
 categories:
-  - iOS
+  - iOS-PRO
 excerpt: "생명주기:)"
 date: 2023-07-26
 tags:
