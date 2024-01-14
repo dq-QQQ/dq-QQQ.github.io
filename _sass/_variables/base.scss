@@ -61,7 +61,6 @@ $selection-color              : white;
   @return if(type-of($custom_family) == 'string', $custom_family, null);
 }
 
-// Custom font
 @font-face {
   font-family: 'custom-font';
   src: url('BMJUA_otf.otf') format('opentype');
@@ -72,12 +71,18 @@ $selection-color              : white;
 $font-family-custom: "custom-font", sans-serif;
 
 $font-family-base: $font-family-custom;
+$font-family-logo: if(get_font_family('logo'), (get_font_family('logo'), $font-family-custom), $font-family-base);
+$font-family-headings: if(get_font_family('headings'), (get_font_family('headings'), $font-family-custom), $font-family-base);
+$font-family-posts: if(get_font_family('posts'), (get_font_family('posts'), $font-family-custom), $font-family-base);
+$font-family-monospace: consolas, Menlo, $font-family-custom, monospace;
+$font-family-monospace: if(get_font_family('codes'), (get_font_family('codes'), consolas, Menlo, $font-family-custom, monospace), $font-family-monospace);
+$font-family-icons: 'FontAwesome';
 
-
+/*
 // Font families.
-//$font-family-chinese      : "PingFang SC", "Microsoft YaHei";
+$font-family-chinese      : "PingFang SC", "Microsoft YaHei";
 
-//$font-family-base         : $font-family-chinese, sans-serif;
+$font-family-base         : $font-family-chinese, sans-serif;
 $font-family-base         : if(get_font_family('global'), (get_font_family('global'), $font-family-chinese, sans-serif), $font-family-base);
 
 $font-family-logo         : $font-family-base;
@@ -93,7 +98,7 @@ $font-family-monospace    : consolas, Menlo, $font-family-chinese, monospace;
 $font-family-monospace    : if(get_font_family('codes'), (get_font_family('codes'), consolas, Menlo, $font-family-chinese, monospace), $font-family-monospace);
 
 $font-family-icons        : 'FontAwesome';
-
+*/
 
 // Font Weight
 $font-weight-lighter      : 200;
