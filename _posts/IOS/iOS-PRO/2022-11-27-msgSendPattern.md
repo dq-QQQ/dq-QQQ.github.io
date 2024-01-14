@@ -5,7 +5,7 @@ categories:
 excerpt: "앱의 runLoop와 델리겟, 알림 리스폰더등의 패턴을 알아보자:)"
 date: 2023-11-27
 tags:
-- iOS
+- iOS-PRO
 ---
 
 # 개요

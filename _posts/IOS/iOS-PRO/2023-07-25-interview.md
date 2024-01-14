@@ -1,11 +1,11 @@
 ---
 title: iOS 지식
 categories:
-  - iOS-PRO
+  - iOS
 excerpt: "면접 대비!!!!!!!!:)"
 date: 2023-07-25
 tags:
-- iOS
+- iOS-PRO
 ---
 
 

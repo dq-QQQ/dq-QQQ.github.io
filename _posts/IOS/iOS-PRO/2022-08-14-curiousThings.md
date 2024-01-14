@@ -1,10 +1,11 @@
 ---
 title: 궁금한 것
 categories:
-  - etc 
+  - iOS
 excerpt: "궁금한것들:)"
 date: 2022-08-14
 tags:
+- iOS-PRO
 ---
 
 
