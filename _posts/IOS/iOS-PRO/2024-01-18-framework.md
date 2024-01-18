@@ -88,13 +88,8 @@ xCode Target으로 앱을 만들 수도 있지만 프레임워크와 정적 라�
 
 ## XCFramework
 
-[https://developer.apple.com/videos/play/wwdc2019/416/](https://developer.apple.com/videos/play/wwdc2019/416/)
+[wwdc 설명](https://developer.apple.com/videos/play/wwdc2019/416/)
 
- [Binary Frameworks in Swift - WWDC19 - Videos - Apple Developer
-
-Xcode 11 now fully supports using and creating binary frameworks in Swift. Find out how to simultaneously support devices and Simulator...
-
-developer.apple.com](https://developer.apple.com/videos/play/wwdc2019/416/)
 
 ---
 
