@@ -12,7 +12,7 @@ tags:
 
 
 
-## 개요
+# 개요
 
 xCode Target으로 앱을 만들 수도 있지만 프레임워크와 정적 라이브러리를 만들 수 있다.
 
@@ -22,7 +22,7 @@ xCode Target으로 앱을 만들 수도 있지만 프레임워크와 정적 라�
 
 ---
 
-## Library
+# Library
 
 -   라이브러리는 다른 프로젝트에서 사용할 수 있는 함수, 클래스, 상수, 변수등을 모은 것
 -   재사용성을 높이고, 모듈화를 하여 관리의 용이성을 높이기 좋음
@@ -31,14 +31,14 @@ xCode Target으로 앱을 만들 수도 있지만 프레임워크와 정적 라�
 
 ---
 
-## Framework
+# Framework
 
 -   프레임워크는 라이브러리, nib, 이미지, 헤더파일, 레퍼런스등을 단일 패키지로 캡슐화한 디렉토리
 -   라이브러리와 사용 방법, 사용 이유, 종류 등이 유사함
 
 ---
 
-## Static Library / Framework
+# Static Library / Framework
 
 -   생성방법
     -   Static Library를 Target에 추가
@@ -59,7 +59,7 @@ xCode Target으로 앱을 만들 수도 있지만 프레임워크와 정적 라�
 
 ---
 
-## Dynamic Library / Framework
+# Dynamic Library / Framework
 
 -   생성방법
     -   Static Library를 만들 때 했던 작업에서 **Mach-O Type**을 **Dynamic Library**로 설정
@@ -73,7 +73,7 @@ xCode Target으로 앱을 만들 수도 있지만 프레임워크와 정적 라�
 
 ---
 
-## Mach-O Type
+# Mach-O Type
 
 -   Target을 빌드한 후 나오는 바이너리 파일의 형식
 -   NextStep 운영체제에서 사용하던 Mach-O 커널에서 유래 (현재 Apple은 XNU 커널)
@@ -86,14 +86,16 @@ xCode Target으로 앱을 만들 수도 있지만 프레임워크와 정적 라�
 
 ---
 
-## XCFramework
+# XCFramework
 
 [wwdc 설명](https://developer.apple.com/videos/play/wwdc2019/416/)
 
 
 ---
 
-## 적용 원리
+# 적용 원리
+
+프레임워크를 프로젝트에 고냥 복사하면 된다. 그럼 알아서 빌드 설정에도 추가해준다.
 
 애플 공식문서에서 설명하는 Static Library 과정
 
@@ -123,14 +125,8 @@ xCode Target으로 앱을 만들 수도 있지만 프레임워크와 정적 라�
 
 ---
 
-## 적용 원리
 
-애플 공식문서에서 설명하는 Static Library 과정
-
----
-
-
-## 프레임워크화를 했을 때의 장점
+# 프레임워크화를 했을 때의 장점
 
 -   UIKit, libconv.tbd와 같은 파일을 함께 배포할 수 있다.
     -   이렇게 되면 프레임워크 사용자는 UIKit을 import하지 않아도 된다.
