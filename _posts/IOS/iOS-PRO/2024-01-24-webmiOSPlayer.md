@@ -30,8 +30,9 @@ webm을 실행하기 위해 내가 처음 생각한 방법은 다음 3가지였�
 -   webm player를 앱에 심기
 -   webView
 
-webm 포맷, ios의 비디오 포맷, 내가 생각한 3가지 방법에 대해서 살펴보겠다.
+이 글에서는 webm 포맷, ios의 비디오 포맷, 내가 생각한 3가지 방법에 대해서 살펴보겠다.
 
+[3가지 방법의 샘플 코드](https://github.com/dq-QQQ/webmiOSPlayer)
 
 <br />
 
@@ -248,3 +249,44 @@ VLC media player를 사용했다.
 -   Safari 웹 브라우저의 렌더링 엔진인 WebKit 기반
 -   Safari에서 사용되는 Nitro JavaScript 엔진 사용
 -   webm 실행 안됨
+
+
+
+<br />
+
+---
+
+# 최종 결과
+
+webm을 mp4로 변환하여 AVPlayer로 실행시키는 방법으로 가게되었다.
+
+- 실행시킬 비디오는 144 * 192와 같이 별로 높지 않은 품질임
+- 프레임도 별로 안높음 30 언더
+- 그러므로 변환 속도는 매우 빠름
+- 라이브러리의 크기가 작음
+- VLC는 상업용 플레이어로 그 플레이어를 심는 것은 변수가 많음.(라이센스, 사업, 사용등...)
+- VLC도 내부적으로는 FFmpeg을 쓸 수 밖에 없음
+- 그럴바엔 그냥 처음부터 FFmpeg을 사용하기로 결론
+
+
+
+
+
+<br />
+
+---
+
+# 오픈소스 라이센스 문제
+
+그냥 개인 프로젝트면 막 가져다 쓰지만 상업용 제품에 들어가기 때문에 라이센스 문제도 골치 아팠다.
+
+
+
+https://www.oss.kr/index.php/oss_license_qna/show/57689a21-c7db-49c1-ac93-21035f753851?page=1
+
+https://www.oss.kr/oss_license_qna/show/22440b2d-197f-49b0-bdff-9d7b101113c8?page=22
+hall of shame
+
+https://www.oss.kr/oss_license_qna/show/167bf80b-2206-4c7b-a63e-a8358d008f90?search_keyword=LGPL+v2.1&page=3
+
+https://www.oss.kr/oss_license_qna/show/2a2f20a6-4387-4093-87f2-dda3bbac466d
