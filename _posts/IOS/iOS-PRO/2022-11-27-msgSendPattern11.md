@@ -1,10 +1,11 @@
 ---
-title: 앱 데이터 송신 패턴
+title: UIKit에서의 데이터 전달
 categories:
   - iOS
 excerpt: "앱의 runLoop와 델리겟, 알림 리스폰더등의 패턴을 알아보자:)"
 date: 2023-11-27
 tags:
+- UIKit
 - iOS-PRO
 ---
 
@@ -155,6 +156,37 @@ notification center에 post 할 경우 NSNotification 클래스 인스턴스에 
 
 ---
 
+# 공통점
+
+앱에서 발생한 이벤트가 현재 화면이 아닌 다른화면까지 영향을 줄 때 사용한다. 그러기에 결과는 같다.
+
+모두 앱 내부에서 이벤트를 처리하거나 데이터를 전달하는 데 사용되는 패턴이다.
+
+두 방식 모두 값의 변화를 포착하여 이벤트를 발생시킨다.
+
+<br />
+<br />
+
+---
+
+# 차이점
+
+1대1, 1대다의 객체간 관계가 있다.따라서 Delegate은 객체간 상호작용이 필요한 경우, Notification은 한 이벤트에 여러개의 객체가 반응할 때 사용한다.
+
+Delegate은 프로토콜을 사용하여 델리게이트 객체가 해당 프로토콜을 구현하는 방식으로 등록하지만 Notification은 NotificationCenter라는 외부객체를 이용한다.
+
+Notification 방식은 수신자가 발신자의 정보를 모르지만 Delegate은 알고있다.
+
+Notification은 어떤 값의 변화를 포착하여 상응하는 이벤트를 발생하기만 하면 된다.
+
+Delegate은 객체의 틀을 프로토콜로 잡고 값의 변화를 저장한 변수를 추적하며 이벤트처리 메서드를 요구한다.
+
+
+<br />
+<br />
+
+---
+
 # SwiftUI에서 데이터 송신 패턴
 
 ---
@@ -167,9 +199,3 @@ UIKit에서는 이러한 패턴들을 사용하여 객체 간 통신, 데이터 
 SwiftUI에서는 UIKit과는 다르게 뷰와 데이터의 상태에 중심을 두고 데이터 흐름을 관리하는데 프로퍼티 래퍼를 활용한다.
 
 delegate와 Notification Center를 대체하는 것으로 @State, @Binding, @ObservableObject, @EnvironmentObject등을 활용하여 데이터를 관리하고 전달한다.
-
-이 부분은 다음 글에서 알아보겠다.
-
-추가적으로 UIKit에서 어떻게 데이터 송신하는지 아래에 잘나와있다.
-
-[https://i-colours-u.tistory.com/6/](https://i-colours-u.tistory.com/6/)

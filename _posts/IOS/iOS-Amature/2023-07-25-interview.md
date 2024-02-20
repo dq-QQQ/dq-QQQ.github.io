@@ -5,7 +5,7 @@ categories:
 excerpt: "면접 대비!!!!!!!!:)"
 date: 2023-07-25
 tags:
-- iOS-PRO
+- iOS
 ---
 
 https://github.com/yurrrri/ready-for-tech-interview.git
