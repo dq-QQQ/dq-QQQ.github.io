@@ -59,12 +59,13 @@ xcode에서 안잡아주는것도 있다.
 <br />
 
 ### 자주 쓰는 명령어
-    -   po(print object) : 변수를 확인할 때 pretty print, debugDescription 출력
-        -   debugDescription과 description은 오버라이드 가능 (CALayer와 같이)
-    -   p : raw 구조로 print, `expression --`랑 같으며 코드를 실행함
-    -   v : 코드를 실행하지 않고 메모리에서 값을 읽어옴
-    -   e(expression) : 앱을 재시작하지 않고 런타임에 코드를 주입할 수 있음
-    -   bt : 크래시가 났을 때 현재 스레드의 함수 콜스택을 프린트 (디버그 네비게이터랑 같음)
+
+-   po(print object) : 변수를 확인할 때 pretty print, debugDescription 출력
+    -   debugDescription과 description은 오버라이드 가능 (CALayer와 같이)
+-   p : raw 구조로 print, `expression --`랑 같으며 코드를 실행함
+-   v : 코드를 실행하지 않고 메모리에서 값을 읽어옴
+-   e(expression) : 앱을 재시작하지 않고 런타임에 코드를 주입할 수 있음
+-   bt : 크래시가 났을 때 현재 스레드의 함수 콜스택을 프린트 (디버그 네비게이터랑 같음)
 
 <br />
 
@@ -99,6 +100,7 @@ edit scheme 가면 있는 Diagnostics 옵션에 대해
     -   1~7 : 8바이트가 꽉차지 않은 할당
     -   음수(F*) : 스택, 힙, 데이터 등등 접근금지 코드
 -   ASan은 컴파일시에 메모리 접근 가능 여부를 확인하는 코드를 삽입함
+
 ```C
 *addr = value;
 ------>>>
@@ -110,6 +112,7 @@ if (shadow_byte_value!=0)
 
 *addr=value;
 ```    
+
 -   >>>3은 섀도우바이트 가져오는것
 -   access함수에서 음수면 프로그램 강제종료
 -   레드존 : 메모리가 할당될 때 해당 메모리 앞뒤로 여분의 공간을 만들고 그 공간에 접근하면 섀도우바이트에 기록
@@ -341,16 +344,26 @@ void doSomething() {
 -   앱 분석 공유에 동의한 App Store 사용자는 xcode에서 분석가능 (but firebase crashlytics를 주로 사용)
 
 
-## 메모리 접근 오류
+## Zombie Objects
 
--   크래시 유형은 EXC_BAD_ACCESS (SIGSEGV)
--   nil 포인터, 해제된 메모리, 접근권한 없는 주소에 접근하려고 할 때 발생
--   진단도구 : ASan, Zombie Object
+-   런타임 함수에서의 크래시 (objc_msgSend, objc_release 등)
+    -   objc 런타임이 해제된 객체에 메시지를 보낼 수 없을 때 발생
+    -   objc 런타임이 해제된 객체를 다시 해제하려할 때 발생 (Autorelease 풀에서)
+-   Unrecognized Selector 
+    - 해제된 객체가 사용하던 메모리를 재사용했는데 그 위치에 이전 객체의 Selector를 보낼때
+    - doesNotRecognizeSelector 호출 스택 프레임
 
-## 런타임 및 언어 오류
+## 메모리 손상(Memory Corruption)
 
--   Swift 런타임 오류, 대부분 !를 사용할 때
--   처리되지 않는 ObjC 오류
+-   메모리 접근 문제의 진짜 원인이 백트레이스에 안나타나는 경우가 있음
+-   잘못된 코드에 의해서 수정되고 한참뒤에 앱의 다른 부분이 그 메모리를 접근하면 크래쉬가 발생함
+-   이 경우 ASan 사용해서 사전에 잡아야됨
+-   메모리 접근 문제
+    -   Invalid Memory Fetch : 유효하지 않은 포인터를 역참조(사용)
+    -   Invalid Instruction Fetch : 예기치 않은 객체에 함수 호출 시도
+    -   이 경우 Program Counter(pc) 레지스터를 봐야함
+    -   pc != crash address : Invalid Memory Fetch
+    -   pc == crash address : Invalid Instruction Fetch
 
 
 ## 크래시 종류
