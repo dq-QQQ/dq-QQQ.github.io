@@ -377,3 +377,16 @@ void doSomething() {
     - Namespace SPRINGBOARD, Code 0x8badf00d(Ate Bad Food) : 앱 실행(Launch) 시간이 너무 오래 걸림
     - Namespace SPRINGBOARD, Code 0xdead10cc(Dead Lock) : 앱이 백그라운드 작업을 제시간에 완료하지 않는 등 교착 상태에 빠짐
     - Namespace DYLD, Code 0x1(Missing Framework) : dyld가 라이브러리를 로드하지 못함
+
+
+
+<br />
+
+---
+
+# ASan 특정 파일이나 코드에서 추적 제외하기
+
+-   특정 파일
+    -   `-fno-sanitize=address`를 Build Phases / Compile Sources 섹션에 Compiler Flags여기에 추가한다.
+-   특정 코드
+    -   `__attribute__((no_sanitize("address")))`를 함수 위에 추가한다.
