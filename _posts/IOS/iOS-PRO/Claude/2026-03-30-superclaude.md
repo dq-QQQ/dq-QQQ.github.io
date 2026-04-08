@@ -94,6 +94,7 @@ tags:
 
 
 
+
 <br />
 
 ---
@@ -107,3 +108,22 @@ tags:
 -   --ultrathink : 핵심 시스템 재설계, 복잡한 디버깅
 -   --verbose : 상세하게
 -   --delegate : 서브에이전트 활성화 files, folders, auto
+
+
+<br />
+
+---
+
+# Agent
+
+-   architect : 시스템 설계 및 아키텍쳐 계획
+-   frontend : UI/UX 디자인 및 사용자 경험
+-   scribe : 요구사항 문서화 및 사양 정의
+-   backend : API 및 서비스 구현
+-   security : 보안 구현 및 강화
+-   qa : 테스트 전략 및 품질 보증
+-   performance : 성능 테스트 및 최적화
+-   analyzer : 버그 조사 및 근본 원인 분석
+-   refactorer : 리팩토링
+-   mentor : 선생님
+-   devops : 배포 자동화 및 인프라
