@@ -16,83 +16,285 @@ tags:
 
 ---
 
-# SuperClaude Commands
+# SuperClaude란?
 
-내가 지금 어떤 개발 작업 단계인가를 파악하고 알맞은 커맨드를 사용해야함
+Claude Code의 기본 기능 위에 전문화된 워크플로우를 추가한 시스템:
+- **전문 에이전트** 호출 (보안, 성능, 아키텍처 등)
+- **복잡한 태스크 자동 분해** 및 위임
+- **MCP 도구 통합** (Serena, context7, Playwright 등)
+- **세션 컨텍스트 지속성** (save/load)
 
-## 1순위 커맨드
+# 명령어 분류표
 
--   /sc:implement : 단순 구현만해주는게 아니라 요구사항 분석 -> 구조 설계 -> 구현 -> 자체 검토의 워크플로우를 트리거, security-engineer가 같이 활성화됨
--   /sc:troubleshoot : 단순 디버깅만 해주는게 아니라 증상 -> 가설 수립 -> 원인 분석 -> 수정 방안의 워크플로우를 트리거, root-cause-analyst가 활성화되어 근본을 찾으려함
--   /sc:test : 단순 테스트 코드만 생성하는게 아니라 엣지 케이스와 경계 조건까지 체계적으로 커버함
--   /sc:explain : 생소한 코드를 잘 설명해줌 동작방식, 설계의도 패턴, 잠재적 문제점까지 설명해줌
+## 🏗️ 핵심 (Core)
 
-<br />
+| 명령어 | 기능 | 사용 시나리오 |
+|--------|------|---------------|
+| `/sc` | 커맨드 디스패처 | SuperClaude 진입점 |
+| `/sc:help` | 모든 명령어 목록 | 명령어 찾기 |
+| `/sc:recommend` | 최적 명령어 추천 | 어떤 명령어를 쓸지 모를 때 |
+| `/sc:select-tool` | MCP 도구 선택 | 복잡도 기반 최적 도구 추천 |
 
+## 📋 프로젝트 관리 (Management)
 
-## 2순위 커맨드
+| 명령어 | 기능 | 사용 시나리오 |
+|--------|------|---------------|
+| `/sc:pm` | 프로젝트 매니저 에이전트 | 전체 워크플로우 조율 |
+| `/sc:task` | 태스크 실행 + 위임 | 복잡한 멀티스텝 작업 |
+| `/sc:spawn` | 태스크 분해 + 오케스트레이션 | 대규모 작업 병렬화 |
+| `/sc:workflow` | PRD에서 워크플로우 생성 | 기능 구현 계획 |
+| `/sc:estimate` | 개발 견적 | 작업 규모 추정 |
 
--   /sc:analyze : 코드나 아키텍쳐 전반을 분석함. 성능, 병목, 보안 취약점, 코드 냄새, 의존성 문제등을 알려줌
--   /sc:research : 기술비교나 최신동향을 종합적으로 해주는 딥 리서치 워크플로우
+## 💻 개발 (Development)
 
-<br />
+| 명령어 | 기능 | 사용 시나리오 |
+|--------|------|---------------|
+| `/sc:implement` | 기능 구현 | 코드 작성 |
+| `/sc:design` | 아키텍처/API 설계 | 시스템 설계 |
+| `/sc:build` | 빌드/컴파일 | 빌드 오류 해결 |
+| `/sc:test` | 테스트 + 커버리지 | 테스트 실행/분석 |
+| `/sc:git` | 스마트 Git 작업 | 커밋/브랜치/PR |
 
-## 기획 & 설계
+## 🔍 분석 (Analysis)
 
--   /sc:brainstorm : 아직 뭘 만들지 모를때 막연한 아이디어를 구체화할 때 사용, 잘 모르겠는데,,,이러면 루프를 트리거
--   /sc:design : 무엇이 확정된 다음 어떻게를 구체화할때 사용, 기술 아키텍처, 데이터 모델, api 명세를 만들수있음
+| 명령어 | 기능 | 사용 시나리오 |
+|--------|------|---------------|
+| `/sc:analyze` | 코드 품질/보안/성능 분석 | 종합 코드 분석 |
+| `/sc:improve` | 체계적 코드 개선 | 리팩토링 |
+| `/sc:cleanup` | 데드코드 제거 | 코드 정리 |
+| `/sc:troubleshoot` | 이슈 진단 | 버그 해결 |
+| `/sc:explain` | 코드/개념 설명 | 이해가 필요할 때 |
+| `/sc:reflect` | 태스크 검증 | 작업 결과 리뷰 |
 
+## 📖 문서 (Documentation)
 
-<br />
+| 명령어 | 기능 | 사용 시나리오 |
+|--------|------|---------------|
+| `/sc:document` | 컴포넌트/API 문서 생성 | 특정 기능 문서화 |
+| `/sc:index` | 프로젝트 지식 베이스 생성 | 종합 문서화 |
+| `/sc:index-repo` | 레포지토리 인덱싱 | 94% 토큰 절감 인덱스 |
 
-## 구현
+## 🧠 기획 (Planning)
 
--   /sc:implement : 존재하지 않는 것을 만들때. 빈파일에서 완성된 코드까지 설계->구현->자체검증을 한번에 수행
--   /sc:build : 빌드 파이프라인을 실행.
--   /sc:improve : 이미 동작하는 코드를 더 좋게. 기능은 그대로 품질, 성능, 보안을 향상
-    -   --safe : 외부 동작에 영향을 줄 수 있는 변경은 건너뛰고 가독성 같은 것만
-    -   --interactive : 변경 하나하나를 직접 승인
-    -   --validate : 변경 후 테스트 자동실행
+| 명령어 | 기능 | 사용 시나리오 |
+|--------|------|---------------|
+| `/sc:brainstorm` | 소크라테스식 요구사항 발견 | 기획 초기 |
+| `/sc:spec-panel` | 멀티 전문가 스펙 리뷰 | 사양서 검증 |
+| `/sc:business-panel` | 비즈니스 전략 분석 | 사업 의사결정 |
 
+## 🔧 유틸리티 (Utility)
 
-<br />
+| 명령어 | 기능 | 사용 시나리오 |
+|--------|------|---------------|
+| `/sc:research` | 웹 심층 리서치 | 기술 조사 |
+| `/sc:save` | 세션 컨텍스트 저장 | 작업 중단 시 |
+| `/sc:load` | 세션 컨텍스트 복원 | 작업 재개 시 |
+| `/sc:agent` | 에이전트 직접 실행 | 커스텀 에이전트 |
 
-## 테스트 & 품질
+# SuperClaude 활용 실전 패턴
 
--   /sc:test : 미래의 버그를 방지 --type e2e같이 원하는 테스트
--   /sc:analyze : 현재 코드의 상태를 진단, 건강 검진같은 느낌, 분석 깊이는 --think같은것으로 
--   /sc:troubleshoot : 현재의 버그를 해결
+## 기능 개발
 
-<br />
+### 패턴 1: 새 기능 구현 (풀 플로우)
+```
+/sc:brainstorm → /sc:design → /sc:workflow → /sc:implement → /sc:test → /sc:git
+```
+요구사항 발견 → 아키텍처 설계 → 구현 계획 → 코드 작성 → 테스트 → 커밋
 
-## 코드 이해
+### 패턴 2: 빠른 기능 추가 (간소화)
+```
+/sc:implement → /sc:test → /sc:git
+```
+명확한 요구사항이 이미 있을 때, 바로 구현
 
--   둘다 코드를 이해하는 것은 같으나
--   /sc:explain : 실시간 설명으로 끝남
--   /sc:document : 문서로 남김, explain이 선행될 때 좋음
+### 패턴 3: UI 중심 기능 구현
+```
+/sc:brainstorm → /sc:design → /sc:implement --magic → /sc:test --play → /sc:git
+```
+Magic MCP로 컴포넌트 생성 + Playwright로 브라우저 테스트
 
+## 코드 품질
 
-<br />
+### 패턴 4: 코드 품질 개선
+```
+/sc:analyze → /sc:improve → /sc:cleanup → /sc:test → /sc:reflect
+```
+분석 → 개선 → 정리 → 테스트 → 결과 검증
+
+### 패턴 5: 보안 감사
+```
+/sc:analyze --focus security → /sc:implement (fix) → /sc:test → /sc:document
+```
+보안 취약점 발견 → 패치 → 테스트 → 보안 문서화
+
+### 패턴 6: 성능 최적화
+```
+/sc:analyze --focus performance → /sc:troubleshoot → /sc:improve → /sc:test → /sc:reflect
+```
+성능 병목 발견 → 원인 진단 → 최적화 → 테스트 → 검증
 
 ## 리팩토링
 
--   /sc:cleanup : 코드의 동작을 바꾸지 않고 미사용 코드, 중복선언등 불필요한것을 지움 --preview로 미리 보기 ㄱㄱ
--   /sc:reflect : 코드를 직접 바꾸지 않고 내가 맞는 방향인지 검증
+### 패턴 7: 대규모 리팩토링
+```
+/sc:analyze --ultrathink → /sc:workflow → /sc:spawn --delegate auto → /sc:test → /sc:git
+```
+전체 분석 → 단계별 계획 → 서브에이전트 병렬 실행 → 테스트 → 커밋
+
+### 패턴 8: 모듈 단위 리팩토링
+```
+/sc:analyze --scope module → /sc:improve → /sc:test → /sc:git
+```
+특정 모듈만 집중 분석 후 개선
+
+## 이슈 대응
+
+### 패턴 9: 프로덕션 이슈 대응
+```
+/sc:troubleshoot --think-hard → /sc:implement --safe-mode → /sc:test → /sc:git
+```
+심층 진단 → 안전 모드로 수정 → 테스트 → 커밋
+
+### 패턴 10: 원인 불명 버그 추적
+```
+/sc:troubleshoot --ultrathink → /sc:explain → /sc:implement (fix) → /sc:test → /sc:reflect
+```
+최대 깊이 분석 → 원인 설명 → 수정 → 테스트 → 수정 검증
+
+## 기획/리서치
+
+### 패턴 11: 기술 의사결정
+```
+/sc:research --depth deep → /sc:spec-panel --mode debate → /sc:design
+```
+기술 조사 → 전문가 패널 토론 → 최종 설계
+
+### 패턴 12: 프로젝트 킥오프
+```
+/sc:brainstorm → /sc:spec-panel → /sc:estimate → /sc:workflow → /sc:design
+```
+요구사항 발견 → 스펙 검증 → 견적 → 구현 계획 → 설계
+
+### 패턴 13: 비즈니스 분석
+```
+/sc:research → /sc:business-panel → /sc:document
+```
+시장/기술 조사 → 비즈니스 전문가 패널 분석 → 문서화
+
+## 문서/온보딩
+
+### 패턴 14: 프로젝트 문서화
+```
+/sc:index-repo → /sc:index → /sc:document
+```
+레포 인덱싱(94% 토큰 절감) → 지식 베이스 생성 → 상세 문서
+
+### 패턴 15: 코드 이해 (온보딩)
+```
+/sc:index-repo → /sc:explain → /sc:analyze
+```
+프로젝트 구조 파악 → 핵심 코드 설명 → 품질/아키텍처 분석
+
+## 세션 관리
+
+### 패턴 16: 장기 작업 세션
+```
+/sc:load → (작업) → /sc:save → (다음 세션) → /sc:load → /sc:reflect
+```
+컨텍스트 복원 → 작업 → 저장 → 복원 → 진행 상황 검증
 
 
 
 <br />
 
-## 오케스트라
+---
 
-지금까지의 커맨드는 모두 코드를 직접 건드림 그러나 오케스트라는 좀 더 큰 틀에서 프로젝트를 봄 지휘자를 만드는것이라고 봄
+# 실전 사용 예시
 
--   /sc:pm : 어디서부터 시작할지모를때. 막연한 요청을 brainstorm -> design -> workflow -> spawn -> task 파이프라인을 오케스트레이션
--   /sc:workflow : 설계가 끝나고 phase별 태스크 분해, 의존성 파악, 병렬 실행가능여부등 실제 구현계획 생성
--   /sc:spawn : phase를 task로 쪼갬
--   /sc:task : spawn이 만든 계획의 각 항목을 실행
+## 코드 분석 및 개선
+```bash
+# 인증 모듈 보안 심층 분석
+/sc:analyze --think-hard --focus security src/auth/
 
+# 성능 개선 + 실행 전 검증
+/sc:improve --focus performance --validate
 
+# 레거시 모듈 정리
+/sc:cleanup --scope module src/legacy/
+```
+
+## 기능 구현 (풀 플로우)
+```bash
+# 1. 요구사항 발견
+/sc:brainstorm "사용자 대시보드 기능"
+
+# 2. 아키텍처 설계
+/sc:design --think-hard "대시보드 아키텍처"
+
+# 3. UI 구현 (Magic MCP로 컴포넌트 생성)
+/sc:implement --magic --validate "대시보드 UI 구현"
+
+# 4. 테스트
+/sc:test --scope module
+```
+
+## 대규모 리팩토링
+```bash
+# 프로젝트 전체 최대 깊이 분석
+/sc:analyze --ultrathink --scope project
+
+# 서브에이전트 5개 병렬로 리팩토링
+/sc:spawn --delegate auto --concurrency 5 "인증 모듈 리팩토링"
+
+# 프로젝트 전체 품질 테스트
+/sc:test --scope project --focus quality
+```
+
+## 프로덕션 이슈 대응
+```bash
+# 이슈 원인 심층 진단
+/sc:troubleshoot --think-hard "API 응답 지연 이슈"
+
+# 시스템 전체 성능 분석
+/sc:analyze --focus performance --scope system
+
+# 안전 모드로 패치 (검증 포함)
+/sc:implement --safe-mode --validate "성능 패치"
+```
+
+## 리서치 및 기획
+```bash
+# 기술 심층 조사
+/sc:research --depth deep "OAuth 2.1 vs 2.0 차이점"
+
+# 전문가 패널 스펙 리뷰 (비판 모드)
+/sc:spec-panel --mode critique "인증 시스템 스펙"
+
+# 작업량 추정
+/sc:estimate --think "마이그레이션 작업량"
+```
+
+## 세션 관리
+```bash
+# 작업 중단 시 전체 컨텍스트 저장
+/sc:save --type all
+
+# 다음 세션에서 체크포인트 복원
+/sc:load --type checkpoint
+```
+
+## 플래그 조합 팁
+
+| 목적 | 플래그 조합 |
+|------|------------|
+| 분석 깊이 조절 | `--think` < `--think-hard` < `--ultrathink` |
+| 프로덕션 안전 | `--safe-mode --validate` |
+| 토큰 절약 | `--uc --token-efficient` (30-50% 절감) |
+| 병렬 처리 | `--delegate auto --concurrency 5` |
+| MCP 전체 활성화 | `--all-mcp` |
+| MCP 없이 실행 | `--no-mcp` |
+| 특정 도메인 집중 | `--focus [performance\|security\|quality\|architecture]` |
+| 분석 범위 지정 | `--scope [file\|module\|project\|system]` |
 
 
 <br />
@@ -114,16 +316,52 @@ tags:
 
 ---
 
-# Agent
+# Agent (23개)
 
--   architect : 시스템 설계 및 아키텍쳐 계획
--   frontend : UI/UX 디자인 및 사용자 경험
--   scribe : 요구사항 문서화 및 사양 정의
--   backend : API 및 서비스 구현
--   security : 보안 구현 및 강화
--   qa : 테스트 전략 및 품질 보증
--   performance : 성능 테스트 및 최적화
--   analyzer : 버그 조사 및 근본 원인 분석
--   refactorer : 리팩토링
--   mentor : 선생님
--   devops : 배포 자동화 및 인프라
+## 아키텍트
+
+| 에이전트 | 역할 | 전문 분야 |
+|----------|------|-----------|
+| system-architect | 시스템 설계 | 확장성(10x 성장 대비), 컴포넌트 경계, 아키텍처 패턴 |
+| backend-architect | 백엔드 설계 | API 설계, DB 아키텍처, 보안, 시스템 신뢰성 |
+| frontend-architect | 프론트엔드 설계 | 접근성(WCAG 2.1), Core Web Vitals, 컴포넌트 아키텍처 |
+| ios-architect | iOS 앱 설계 | Swift/SwiftUI/UIKit, MVVM/TCA, Core Data, Combine |
+| android-architect | Android 앱 설계 | Kotlin/Jetpack Compose, MVVM/MVI, Room, Play Store |
+| devops-architect | 인프라/배포 | CI/CD 파이프라인, IaC, 모니터링, 컨테이너 오케스트레이션 |
+
+## 품질/보안
+
+| 에이전트 | 역할 | 전문 분야 |
+|----------|------|-----------|
+| security-engineer | 보안 전문가 | OWASP Top 10, CWE 패턴, 위협 모델링, 컴플라이언스 |
+| quality-engineer | QA 전문가 | 테스트 전략, 엣지케이스 탐지, 테스트 자동화, 품질 메트릭 |
+| performance-engineer | 성능 전문가 | 프론트/백엔드 성능, 리소스 최적화, 병목 분석 |
+| refactoring-expert | 리팩토링 전문가 | SOLID 원칙, 기술 부채 감소, 코드 단순화, 품질 메트릭 |
+
+## 분석/리서치
+
+| 에이전트 | 역할 | 전문 분야 |
+|----------|------|-----------|
+| root-cause-analyst | 근본 원인 분석 | 증거 수집, 가설 검증, 패턴 분석, 타임라인 조사 |
+| deep-research-agent | 심층 리서치 | 적응형 계획, 멀티홉 추론, 자기성찰, 출처 인용 |
+| deep-research | 정보 수집 | 정보 탐색 및 종합 |
+
+## 프로젝트/교육
+
+| 에이전트 | 역할 | 전문 분야 |
+|----------|------|-----------|
+| pm-agent | 프로젝트 매니저 | PDCA 사이클, 세션 관리, 자기개선, 패턴 라이브러리 |
+| socratic-mentor | 소크라테스식 멘토 | 발견 학습, 전략적 질문, 디자인 패턴, 수준별 교육 |
+| requirements-analyst | 요구사항 분석가 | 요구사항 도출, 수락 기준 정의, 스코프 관리 |
+| technical-writer | 기술 문서 작성 | API 문서, 기술 문서 시스템, 문서 명확성 |
+| learning-guide | 학습 가이드 | 학습 경로 설계, 교육 콘텐츠 |
+| practice-creator | 연습 문제 생성 | 실습 과제, 퀴즈 생성 |
+
+## 도메인/지원
+
+| 에이전트 | 역할 | 전문 분야 |
+|----------|------|-----------|
+| python-expert | Python 전문가 | 프로덕션 코드, SOLID, 보안, 성능 최적화 |
+| business-panel-experts | 비즈니스 패널 | 9인 전문가 (Christensen, Porter, Drucker, Godin 등) |
+| self-review | 구현 검증 | 구현 후 검증, 품질 보증 |
+| repo-index | 레포 인덱싱 | 레포지토리 구조 분석, 문서화 |
