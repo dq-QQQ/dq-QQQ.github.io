@@ -1,0 +1,26 @@
+# cmux 터미널 폰트 설정 (Ghostty 기반)
+# 적용: cmux에서 Cmd+Shift+, (reload-config) 또는 앱 재시작
+font-family = D2Coding
+font-size = 13
+
+# 부드러운 컬러 팔레트 (ANSI 색 톤다운, 장시간 눈 편함)
+theme = Catppuccin Mocha
+
+# 창 여백 (글자가 가장자리에 붙지 않게)
+window-padding-x = 12
+window-padding-y = 8
+
+# 전경색: 순백 대신 오프화이트 (할레이션·눈부심 완화) — theme보다 우선
+foreground = #d0d0d0
+
+# 눈 피로·가독성 보강
+font-thicken = true
+adjust-cell-height = 15%
+adjust-cell-width = 6%
+cursor-style-blink = false
+minimum-contrast = 1.1
+
+# 배경 이미지 (은하수 밤하늘) — 블러 사본으로 별 노이즈 완화
+background-image = /Users/dq/.config/ghostty/background-blur.jpg
+background-image-opacity = 0.35
+background-image-fit = stretch
