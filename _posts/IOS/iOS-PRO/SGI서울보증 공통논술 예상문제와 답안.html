@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SGI서울보증 공통논술 예상문제와 답안</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=IBM+Plex+Sans+KR:wght@400;500;700&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F4F7FB; --sheet:#FFFFFF; --ink:#1B2540; --muted:#5B6882;
+  --rule:#D3DDEC; --red:#C8102E; --lav:#E4DDF8; --navy:#24365E; --chip:#E8EEF7;
+  --sans:"IBM Plex Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  --serif:"Gowun Batang","Nanum Myeongjo","AppleMyungjo",serif;
+  --pen:"Nanum Pen Script","Comic Sans MS",cursive;
+  --line:2rem;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#121826; --sheet:#1A2232; --ink:#E5EAF3; --muted:#9AA6BD;
+    --rule:#2C3850; --red:#FF6B7D; --lav:#3A3462; --navy:#A9BCE6; --chip:#222C40;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#121826; --sheet:#1A2232; --ink:#E5EAF3; --muted:#9AA6BD;
+  --rule:#2C3850; --red:#FF6B7D; --lav:#3A3462; --navy:#A9BCE6; --chip:#222C40;
+}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.7;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px 120px}
+
+/* top */
+.top{padding:40px 0 8px}
+.dday{font-family:var(--pen);color:var(--red);font-size:2.6rem;line-height:1;margin:0;transform:rotate(-2deg);display:inline-block}
+h1{font-family:var(--serif);font-weight:700;font-size:clamp(1.7rem,5vw,2.3rem);line-height:1.3;margin:10px 0 8px;letter-spacing:-0.01em}
+.lead{color:var(--muted);margin:0 0 18px;max-width:60ch}
+.notice{border-left:3px solid var(--red);background:var(--sheet);padding:12px 16px;border-radius:0 8px 8px 0;font-size:.94rem}
+.notice b{color:var(--red)}
+
+/* nav */
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--paper);margin:20px -20px 0;padding:10px 20px;border-bottom:1px solid var(--rule);overflow-x:auto;white-space:nowrap;scrollbar-width:none}
+nav::-webkit-scrollbar{display:none}
+nav a{display:inline-block;margin-right:6px;padding:6px 12px;border-radius:999px;background:var(--chip);color:var(--ink);text-decoration:none;font-size:.88rem}
+nav a.done{background:var(--navy);color:var(--sheet)}
+nav a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+
+/* how-to */
+.how{margin-top:36px}
+.how h2,.q h2{font-family:var(--serif);font-size:1.45rem;margin:0 0 10px;line-height:1.35}
+.how ol{padding-left:1.2em;margin:0}
+.how li{margin-bottom:6px}
+
+/* question */
+.q{margin-top:56px;padding-top:8px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:6px;font-size:.85rem}
+.pri{padding:2px 10px;border-radius:999px;font-weight:500}
+.pri.high{background:var(--red);color:#fff}
+.pri.mid{background:var(--chip);color:var(--ink)}
+.why{color:var(--muted);margin:0 0 16px;font-size:.95rem}
+.prompt{background:var(--sheet);border:1.5px solid var(--navy);border-radius:4px;padding:16px 18px}
+.prompt p{margin:0 0 8px}
+.prompt p:last-child{margin:0}
+.prompt .no{font-weight:700;color:var(--navy);margin-right:6px}
+.bones{margin:18px 0 0}
+.bones h3{font-size:1rem;margin:0 0 6px}
+.bones ul{margin:0;padding-left:1.1em}
+.bones li{margin-bottom:4px}
+mark{background:var(--lav);color:inherit;padding:0 2px;border-radius:2px}
+
+/* answer sheet — the one bold element */
+details.answer{margin-top:20px}
+details.answer summary{cursor:pointer;list-style:none;display:inline-block;padding:10px 16px;border-radius:6px;background:var(--navy);color:var(--sheet);font-weight:500;font-size:.95rem}
+details.answer summary::-webkit-details-marker{display:none}
+details.answer[open] summary{background:var(--chip);color:var(--ink)}
+.sheet{
+  margin-top:14px;background-color:var(--sheet);
+  background-image:linear-gradient(to right,transparent 46px,var(--red) 46px,var(--red) 47px,transparent 47px),
+                   repeating-linear-gradient(to bottom,transparent 0,transparent calc(var(--line) - 1px),var(--rule) calc(var(--line) - 1px),var(--rule) var(--line));
+  background-position:0 0, 0 14px;
+  padding:14px 18px 14px 62px;border-radius:4px;box-shadow:0 1px 0 var(--rule),0 0 0 1px var(--rule);
+  font-family:var(--serif);font-size:1.02rem;line-height:var(--line);
+}
+.sheet h4{font-family:var(--sans);font-size:.95rem;font-weight:700;color:var(--navy);margin:0;line-height:var(--line)}
+.sheet p{margin:0}
+.sheet .pen{font-family:var(--pen);color:var(--red);font-size:1.45rem;line-height:var(--line);transform:rotate(-1deg);margin-left:-6px}
+.sheet .gap{height:var(--line)}
+
+.actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:16px}
+.actions button{font:inherit;font-size:.92rem;padding:8px 14px;border-radius:6px;border:1.5px solid var(--navy);background:transparent;color:var(--ink);cursor:pointer}
+.actions label{display:flex;gap:6px;align-items:center;font-size:.92rem;cursor:pointer}
+.actions input{width:18px;height:18px;accent-color:var(--navy)}
+
+/* timer */
+.timer{position:fixed;left:0;right:0;bottom:0;z-index:10;background:var(--navy);color:var(--sheet);padding:10px 20px calc(10px + env(safe-area-inset-bottom,0px));display:none}
+.timer.on{display:block}
+.timer .in{max-width:760px;margin:0 auto;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.timer .t{font-size:1.6rem;font-weight:700;font-variant-numeric:tabular-nums}
+.timer .lab{font-size:.88rem;opacity:.85;flex:1;min-width:120px}
+.timer button{font:inherit;font-size:.88rem;padding:6px 12px;border-radius:6px;border:1px solid var(--sheet);background:transparent;color:var(--sheet);cursor:pointer}
+.timer.over .t{color:#FFB3BD}
+
+footer{margin-top:64px;color:var(--muted);font-size:.85rem;border-top:1px solid var(--rule);padding-top:16px}
+
+@media (max-width:520px){
+  .sheet{padding-left:40px;background-image:linear-gradient(to right,transparent 26px,var(--red) 26px,var(--red) 27px,transparent 27px),repeating-linear-gradient(to bottom,transparent 0,transparent calc(var(--line) - 1px),var(--rule) calc(var(--line) - 1px),var(--rule) var(--line))}
+  .sheet{font-size:.98rem}
+}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <p class="dday" id="dday">시험까지 며칠</p>
+  <h1>SGI서울보증 공통논술<br>예상문제와 모범답안</h1>
+  <p class="lead">2026년 10월 17일(토) 필기. 기출 흐름(1번 경제·금융 시사, 2~3번 SGI 사업)과 최근 1년 이슈를 겹쳐서 뽑은 10문제예요. 2026년 이슈 4문제(전세 규제, 중동 사태·금리, 생산적 금융, 고령화)가 맨 앞에 있어요. 먼저 직접 써 보고, 그다음 답안을 펼쳐서 빠뜨린 항목만 체크하세요.</p>
+  <div class="notice"><b>형식 확인 필수</b> 책에는 50분 3문항으로 나와 있지만, 2개 중 택1·A4 2장이라는 자료도 있어요. 수험표나 시험 안내 공지에서 문항 수와 시간을 꼭 확인하세요. 택1이라면 아래 답안보다 길게, 한 편을 깊게 쓰면 돼요.</div>
+</header>
+
+<nav aria-label="문제 목록">
+  <a href="#how">쓰는 법</a>
+  <a href="#q7" data-nav="q7">전세 규제</a>
+  <a href="#q8" data-nav="q8">중동·금리</a>
+  <a href="#q9" data-nav="q9">생산적 금융</a>
+  <a href="#q10" data-nav="q10">고령화</a>
+  <a href="#q1" data-nav="q1">가계부채</a>
+  <a href="#q2" data-nav="q2">금융 AI</a>
+  <a href="#q3" data-nav="q3">AI 보증심사</a>
+  <a href="#q4" data-nav="q4">금융 보안</a>
+  <a href="#q5" data-nav="q5">스테이블코인</a>
+  <a href="#q6" data-nav="q6">상장·신사업</a>
+</nav>
+
+<section class="how" id="how">
+  <h2>답안 쓰는 순서</h2>
+  <ol>
+    <li>문제의 항목(영향 대상, 소문항)을 그대로 소제목으로 쓴다.</li>
+    <li>서론 1~2줄, 본론 80%, 결론 1~2줄.</li>
+    <li>문단마다 현상, 결과, 반대 효과나 대응 순으로 3문장 안팎.</li>
+    <li>최신 숫자 하나, SGI 연결 한 줄은 꼭 넣는다.</li>
+    <li>시간이 되면 쓰던 문항은 결론 한 줄로 끊고 다음 문항으로 넘어간다.</li>
+  </ol>
+</section>
+
+<!-- Q7 -->
+<section class="q" id="q7">
+  <div class="meta"><span class="pri high">2026 이슈 · 가장 유력</span><span>SGI 본업 직결</span></div>
+  <h2>전세 제도 축소와 전세대출 보증 규제</h2>
+  <p class="why">대통령이 전세를 "사금융"이라 부르고, 8·13 대책으로 비거주 1주택자 전세대출 보증이 제한됐어요. SGI는 전세대출 보증 3사 중 하나라 회사에 바로 꽂히는 주제예요.</p>
+  <div class="prompt">
+    <p><span class="no">7-1</span>최근 정부의 전세대출 규제 강화의 배경과 주요 내용을 서술하시오.</p>
+    <p><span class="no">7-2</span>전세대출 규제가 임대차 시장과 보증기관에 미치는 영향을 서술하시오.</p>
+    <p><span class="no">7-3</span>SGI서울보증의 대응 방안을 제시하시오.</p>
+  </div>
+  <div class="bones">
+    <h3>답안 뼈대</h3>
+    <ul>
+      <li>배경: 전세대출이 갭투자와 집값 상승을 떠받침, 전세사기, 가계부채</li>
+      <li>내용: 보증비율 축소, 1주택자 한도 제한, DSR 반영, <mark>비거주 1주택자 보증 제한</mark></li>
+      <li>영향: <mark>반전세·월세화</mark>로 세입자 주거비 부담 / 전세가 상승 가능 / 보증 시장 축소, 손해율은 개선</li>
+      <li>대응: 실수요자 중심 정밀 심사, 월세 관련 보증 상품, 전세사기 예방, 사업 다각화</li>
+    </ul>
+  </div>
+  <details class="answer">
+    <summary>모범답안 펼치기</summary>
+    <div class="sheet">
+      <h4>서론</h4>
+      <p>정부는 전세대출이 집값 상승과 전세사기의 원인이 되었다고 보고 전세대출 규제를 단계적으로 강화하고 있다. 전세대출 보증을 담당하는 보증기관에게 이는 사업 환경 자체가 바뀌는 변화다.</p>
+      <h4>7-1. 배경과 주요 내용</h4>
+      <p>첫째, 보증을 통해 전세대출이 쉽게 공급되면서 전세를 낀 주택 매수, 즉 갭투자의 자금줄 역할을 했다. 둘째, 높은 전세가는 매매가를 떠받쳐 집값 상승으로 이어졌다. 셋째, 보증금이 시세에 육박하는 계약이 늘면서 전세사기 피해가 커졌다.</p>
+      <p>이에 정부는 수도권·규제지역의 보증비율을 낮추고, 1주택자의 전세대출 한도를 제한하며, 전세대출 이자를 DSR에 반영했다. 최근에는 비거주 1주택자에 대한 전세대출 보증까지 제한했다.</p>
+      <p class="pen">↳ 대책 이름(6·27, 9·7, 10·15, 8·13) 다 외울 필요 X, 흐름만</p>
+      <h4>7-2. 영향</h4>
+      <p>임대차 시장: 전세대출이 줄면 보증금 일부를 월세로 돌리는 반전세와 월세가 늘어난다. 이는 세입자의 매달 주거비 부담을 키우고, 순수 전세 매물이 줄어 전세가는 오히려 오를 수 있다.</p>
+      <p>부동산 시장: 갭투자 수요가 줄어 매매가 상승 압력이 약해진다.</p>
+      <p>보증기관: 전세대출 보증 규모가 줄어 보험료 수입이 감소한다. 반면 투기성 수요가 빠지면서 보증 사고율과 손해율은 개선될 수 있다.</p>
+      <h4>7-3. SGI서울보증의 대응</h4>
+      <p>첫째, 비거주 사유 등 예외 대상을 정확히 가려내 실수요자는 보호하고 투기 수요는 걸러내는 정밀 심사 체계를 갖춘다. 둘째, 월세화 흐름에 맞춰 월세 미납이나 임대차 관련 신용을 보장하는 새 상품을 개발한다. 셋째, 시세 대비 보증금 비율 등을 분석해 전세사기 위험을 사전에 차단한다. 넷째, 전세보증 의존도를 낮추고 중금리 대출보증, 이행보증, 해외 사업으로 포트폴리오를 다변화한다.</p>
+      <h4>결론</h4>
+      <p>전세대출 규제는 보증기관에게 위기이자 체질 개선의 기회다. SGI서울보증은 실수요 서민의 주거 안정이라는 공적 역할을 지키면서, 변화하는 임대차 시장에 맞는 보증 모델을 마련해야 한다.</p>
+      <p class="pen">↳ 1번 가계부채 답안이랑 섞어서 쓸 수 있음</p>
+    </div>
+  </details>
+  <div class="actions">
+    <button type="button" data-timer="전세 규제">15분 재며 써보기</button>
+    <label><input type="checkbox" data-done="q7"> 써봤음</label>
+  </div>
+</section>
+
+<!-- Q8 -->
+<section class="q" id="q8">
+  <div class="meta"><span class="pri high">2026 이슈 · 가장 유력</span><span>1번 시사형, 비교형 가능</span></div>
+  <h2>중동 사태와 유가·환율 상승, 금리 인상</h2>
+  <p class="why">2024년엔 금리 인하의 영향을 물었는데, 올해는 반대로 금리 인상 국면이에요. 2018년처럼 과거 위기와 비교하는 문제로 나올 수도 있어요.</p>
+  <div class="prompt">
+    <p><span class="no">8-1</span>중동 사태에 따른 국제유가와 환율 상승이 한국 경제에 미치는 영향을 서술하시오.</p>
+    <p><span class="no">8-2</span>기준금리 인상이 가계, 기업, 보험회사에 미치는 영향을 서술하시오.</p>
+    <p><span class="no">비교형</span>1970년대 석유파동과 최근 중동 사태를 비교하고, 한국 경제에 주는 시사점을 서술하시오.</p>
+  </div>
+  <div class="bones">
+    <h3>답안 뼈대</h3>
+    <ul>
+      <li>경로: 유가↑ → 수입물가↑ → 물가↑ / 안전자산 선호 → 원화 약세 → 물가 재자극</li>
+      <li>결과: <mark>스태그플레이션</mark> 우려, 소비 위축, 기업 원가 부담</li>
+      <li>상쇄 요인: 반도체 수출 호조, 경상수지 흑자</li>
+      <li>금리 인상: 가계 이자 부담·소비 위축 / 한계기업 부실 / 보험사 채권 평가손실 vs 신규 투자수익률↑</li>
+      <li>비교: 당시엔 에너지 효율 낮고 물가 통제 수단 부족 vs 지금은 비축유·수입선 다변화, 독립적 통화정책</li>
+    </ul>
+  </div>
+  <details class="answer">
+    <summary>모범답안 펼치기</summary>
+    <div class="sheet">
+      <h4>서론</h4>
+      <p>2026년 중동 사태가 장기화되면서 국제유가가 급등하고 원·달러 환율은 17년 만에 1,500원을 넘어섰다. 물가가 다시 오르자 한국은행은 금리 인상 기조로 전환했다.</p>
+      <h4>8-1. 유가·환율 상승의 영향</h4>
+      <p>한국은 원유 대부분을 중동에서 수입하므로 유가 상승이 곧바로 수입물가와 소비자물가를 끌어올린다. 동시에 위기 시 안전자산인 달러 선호가 커져 원화가 약세를 보이고, 이것이 다시 수입물가를 높이는 악순환이 생긴다.</p>
+      <p>그 결과 가계의 실질소득이 줄어 소비가 위축되고, 기업은 원가 부담으로 투자를 미룬다. 물가는 오르는데 경기는 둔화되는 스태그플레이션 우려가 커진다.</p>
+      <p>다만 반도체 수출 호조로 경상수지 흑자가 이어지고 있어 충격이 일부 상쇄되는 측면도 있다.</p>
+      <p class="pen">↳ 반대 요인 한 줄 = 균형 잡힌 답안</p>
+      <h4>8-2. 금리 인상의 영향</h4>
+      <p>가계: 변동금리 대출의 이자 부담이 커져 소비가 줄고, 취약 차주의 연체가 늘 수 있다.</p>
+      <p>기업: 자금 조달 비용이 올라 투자가 위축되고, 이자도 못 갚는 한계기업의 부실이 드러날 수 있다.</p>
+      <p>보험회사: 보유 채권 가격이 떨어져 평가손실이 생기지만, 새로 투자하는 자금의 수익률은 높아진다. 보증보험사는 경기 둔화로 가계와 기업의 채무불이행이 늘어 보험금 지급이 증가할 위험이 있다.</p>
+      <h4>시사점과 결론</h4>
+      <p>에너지 수입 의존도를 낮추는 공급망 다변화와 함께, 금융 측면에서는 물가 안정과 취약 차주 보호를 함께 고려하는 정책 조합이 필요하다. 보증보험사는 경기 하강기에 대비해 심사를 강화하는 한편, 일시적 어려움에 처한 서민과 중소기업이 버틸 수 있도록 안전판 역할을 해야 한다.</p>
+      <p class="pen">↳ 비교형이면: 공통점(공급 충격·물가) / 차이점(대응 수단) / 시사점 3단</p>
+    </div>
+  </details>
+  <div class="actions">
+    <button type="button" data-timer="중동·금리">15분 재며 써보기</button>
+    <label><input type="checkbox" data-done="q8"> 써봤음</label>
+  </div>
+</section>
+
+<!-- Q9 -->
+<section class="q" id="q9">
+  <div class="meta"><span class="pri high">2026 이슈 · 유력</span><span>어느 답안 결론에도 활용</span></div>
+  <h2>생산적 금융과 포용적 금융</h2>
+  <p class="why">금융위의 2026년 핵심 기조가 생산적·포용적·신뢰받는 금융이에요. SGI는 2020년에 포용적 금융 문제를 낸 적이 있어요.</p>
+  <div class="prompt">
+    <p><span class="no">9-1</span>정부가 추진하는 생산적 금융과 포용적 금융의 의미와 추진 배경을 서술하시오.</p>
+    <p><span class="no">9-2</span>보증보험사가 생산적·포용적 금융에 기여할 수 있는 방안과 그 한계를 서술하시오.</p>
+  </div>
+  <div class="bones">
+    <h3>답안 뼈대</h3>
+    <ul>
+      <li>생산적 금융: 부동산 쏠림에서 <mark>첨단산업·중소벤처로 자금 흐름 전환</mark></li>
+      <li>포용적 금융: 청년·서민·소상공인·중저신용자의 금융 접근성 확대</li>
+      <li>배경: 저성장 고착, 부동산 편중, 양극화</li>
+      <li>SGI 기여: 이행보증으로 중소기업 계약 지원, 중금리 대출보증, 소상공인 신용평가 고도화</li>
+      <li>한계: 손해율 상승, 상장사로서 수익성 요구와의 충돌</li>
+    </ul>
+  </div>
+  <details class="answer">
+    <summary>모범답안 펼치기</summary>
+    <div class="sheet">
+      <h4>서론</h4>
+      <p>정부는 2026년 금융정책의 방향으로 생산적 금융, 포용적 금융, 신뢰받는 금융으로의 대전환을 내세웠다. 금융이 돈을 중개하는 데 그치지 않고 성장과 포용을 이끄는 역할을 하라는 요구다.</p>
+      <h4>9-1. 의미와 배경</h4>
+      <p>생산적 금융은 부동산과 가계대출에 쏠린 자금을 첨단산업, 중소·벤처기업, 인프라처럼 실물경제의 생산성을 높이는 곳으로 돌리는 것이다. 포용적 금융은 청년, 서민, 소상공인, 중저신용자처럼 제도권 금융에서 소외된 계층의 금융 접근성을 높이는 것이다.</p>
+      <p>배경에는 저성장의 고착화, 부동산에 편중된 금융 구조, 그리고 경제 성과가 고르게 퍼지지 않는 양극화 문제가 있다.</p>
+      <h4>9-2. 보증보험사의 기여 방안</h4>
+      <p>생산적 금융: 중소기업은 담보와 신용이 부족해 계약 체결이나 자금 조달에 어려움을 겪는다. 보증보험사는 이행보증으로 중소기업의 계약을 뒷받침하고, 스타트업 지원 프로그램으로 성장 단계별 지원을 할 수 있다.</p>
+      <p>포용적 금융: 중금리 대출보증으로 중저신용자가 고금리 대출로 밀려나지 않게 돕고, 대안 데이터를 활용한 소상공인 신용평가로 보증 대상을 넓힐 수 있다.</p>
+      <p class="pen">↳ 보증 = 신용 보완 기능 → 이 문장이 핵심 연결고리</p>
+      <h4>9-2. 한계</h4>
+      <p>위험이 큰 대상에 보증을 늘리면 손해율이 올라 건전성이 나빠질 수 있다. 상장사로서 주주의 수익성 요구와 공적 역할 사이에서 갈등이 생길 수도 있다. 따라서 심사 고도화와 정책기관과의 위험 분담 장치가 함께 필요하다.</p>
+      <h4>결론</h4>
+      <p>보증보험의 본질은 부족한 신용을 보완해 경제 활동을 가능하게 하는 것이다. 이 본질 자체가 생산적·포용적 금융과 맞닿아 있으며, 건전성을 지키는 정교한 심사가 그 지속 가능성을 결정한다.</p>
+    </div>
+  </details>
+  <div class="actions">
+    <button type="button" data-timer="생산적 금융">15분 재며 써보기</button>
+    <label><input type="checkbox" data-done="q9"> 써봤음</label>
+  </div>
+</section>
+
+<!-- Q10 -->
+<section class="q" id="q10">
+  <div class="meta"><span class="pri mid">2026 이슈 · 가능성 중간</span><span>2024 일본화 문제의 연장선</span></div>
+  <h2>초고령사회와 금융·보험산업</h2>
+  <p class="why">2024년 "한국 경제의 일본화" 문제에서 저출산·고령화가 이미 나왔어요. 보험연구원도 올해 보험산업 핵심 과제로 고령사회 대응을 꼽았어요.</p>
+  <div class="prompt">
+    <p><span class="no">10</span>초고령사회 진입이 한국 경제와 금융산업에 미치는 영향을 서술하고, 보험회사의 대응 방안을 제시하시오.</p>
+  </div>
+  <div class="bones">
+    <h3>답안 뼈대</h3>
+    <ul>
+      <li>경제: 노동력 감소, 잠재성장률 하락, 소비 위축, 재정 부담</li>
+      <li>금융: 안전자산 선호, <mark>자산 매도 압력</mark>, 연금·노후 자금 수요 증가</li>
+      <li>보험: 간병·연금 수요↑, 신규 가입자↓, 장수 리스크</li>
+      <li>대응: 노후 리스크 종합 관리, 고령층 맞춤 상품, 디지털 소외 해소, 고령 자영업자 신용 관리</li>
+    </ul>
+  </div>
+  <details class="answer">
+    <summary>모범답안 펼치기</summary>
+    <div class="sheet">
+      <h4>서론</h4>
+      <p>한국은 65세 이상 인구가 20%를 넘는 초고령사회에 진입했다. 고령화는 단순한 인구 변화가 아니라 경제 성장 구조와 금융 수요 전체를 바꾸는 요인이다.</p>
+      <h4>경제에 미치는 영향</h4>
+      <p>일하는 인구가 줄어 잠재성장률이 떨어진다. 고령층은 소비를 줄이고 저축을 늘리는 경향이 있어 내수가 위축된다. 연금과 의료 지출이 늘어 재정 부담도 커진다.</p>
+      <h4>금융산업에 미치는 영향</h4>
+      <p>위험자산보다 안전자산을 선호하는 경향이 강해지고, 노후 자금 마련을 위해 주택 등 보유 자산을 처분하려는 수요가 늘 수 있다. 반면 연금, 자산관리, 주택연금 같은 노후 금융 수요는 커진다.</p>
+      <h4>보험산업에 미치는 영향</h4>
+      <p>간병, 치매, 연금처럼 노후 관련 보장 수요는 늘지만 젊은 신규 가입자는 줄어든다. 예상보다 오래 사는 데 따른 장수 리스크도 커진다.</p>
+      <h4>보험회사의 대응 방안</h4>
+      <p>첫째, 연금·간병·자산관리를 묶어 노후 위험을 종합적으로 관리하는 역할로 확장한다. 둘째, 고령층의 디지털 소외를 줄이는 쉬운 상담과 서비스 채널을 마련한다. 셋째, 보증보험 측면에서는 고령 자영업자의 신용 위험을 정교하게 평가하고, 임대소득에 의존하는 고령 임대인 관련 보증 리스크를 관리한다.</p>
+      <p class="pen">↳ SGI 연결 한 줄이 이 문제 점수 가름</p>
+      <h4>결론</h4>
+      <p>고령화는 보험산업에 위기이자 기회다. 보험회사는 위험을 보장하는 역할을 넘어 국민의 노후를 함께 설계하는 동반자로 거듭나야 한다.</p>
+    </div>
+  </details>
+  <div class="actions">
+    <button type="button" data-timer="고령화">15분 재며 써보기</button>
+    <label><input type="checkbox" data-done="q10"> 써봤음</label>
+  </div>
+</section>
+
+<!-- Q1 -->
+<section class="q" id="q1">
+  <div class="meta"><span class="pri high">가능성 높음</span><span>1번 시사형</span></div>
+  <h2>가계부채와 대출 규제</h2>
+  <p class="why">2018, 2023, 2024년에 나온 단골 주제. SGI는 전세대출 보증을 하기 때문에 회사와 바로 연결돼요.</p>
+  <div class="prompt">
+    <p><span class="no">1-1</span>최근 정부의 가계부채 관리 정책의 배경과 주요 내용을 서술하시오.</p>
+    <p><span class="no">1-2</span>가계부채 규제 강화가 가계, 부동산 시장, 금융기관에 미치는 영향을 서술하시오.</p>
+    <p><span class="no">1-3</span>가계부채 리스크 관리 측면에서 SGI서울보증의 역할을 제시하시오.</p>
+  </div>
+  <div class="bones">
+    <h3>답안 뼈대</h3>
+    <ul>
+      <li>배경: 금리 인하 기대, 수도권 집값 상승, 주담대 중심 대출 증가</li>
+      <li>내용: <mark>상환능력(DSR) 중심 규제</mark>, 총량 관리, 전세대출 요건 강화</li>
+      <li>영향: 가계 레버리지 억제 vs <mark>실수요자 접근성 저하·풍선효과</mark> / 거래 둔화·월세화 / 은행 이자이익 감소, 건전성 개선</li>
+      <li>SGI: 보증 심사 정교화, 전세사기 예방, 서민·청년 실수요자 보호</li>
+    </ul>
+  </div>
+  <details class="answer">
+    <summary>모범답안 펼치기</summary>
+    <div class="sheet">
+      <h4>서론</h4>
+      <p>한국의 가계부채는 GDP 대비 주요국 최상위 수준이다. 최근 금리 인하 기대와 수도권 주택 거래 증가로 주택담보대출 중심의 가계대출이 다시 늘자, 정부는 대출 규제를 강화하고 있다.</p>
+      <p class="pen">↳ 가계부채/GDP 최신 숫자 하나 넣기!</p>
+      <h4>1-1. 배경과 주요 내용</h4>
+      <p>첫째, 금리 하락 기대가 커지면서 대출 수요가 늘었다. 둘째, 수도권 집값이 오르며 무리한 차입 투자가 재현될 우려가 커졌다. 셋째, 과도한 가계부채는 소비를 위축시키고 금융 불안의 뇌관이 된다.</p>
+      <p>이에 정부는 차주의 상환능력을 기준으로 대출 한도를 정하는 DSR 규제를 강화하고, 금융권 대출 총량을 관리하며, 전세대출의 이용 요건과 보증 기준을 조이고 있다.</p>
+      <h4>1-2. 경제 주체별 영향</h4>
+      <p>가계: 신규 대출 한도가 줄어 과도한 차입 투자가 억제되고 장기적으로 이자 부담이 안정된다. 반면 실수요자와 서민의 자금 접근성이 떨어지고, 2금융권이나 사내대출로 수요가 옮겨가는 풍선효과가 생길 수 있다.</p>
+      <p>부동산: 매수 수요가 줄어 가격 상승세가 진정되고 거래량이 감소한다. 전세대출이 막히면 전세 수요가 월세로 이동해 임대차 시장의 월세화가 빨라질 수 있다.</p>
+      <p>금융기관: 대출 성장이 둔화되어 이자이익이 줄어드는 대신 자산 건전성은 개선된다. 은행은 기업대출 등 대체 수익원을 찾게 된다.</p>
+      <p class="pen">↳ 긍정/부정 둘 다 쓴 게 핵심</p>
+      <h4>1-3. SGI서울보증의 역할</h4>
+      <p>첫째, 전세대출 보증 심사에서 임대인의 신용과 선순위 채권을 꼼꼼히 확인해 부실 보증을 줄인다. 둘째, 보증금이 시세에 비해 과도한 계약 등 전세사기 위험 신호를 사전에 걸러낸다. 셋째, 규제로 소외되기 쉬운 청년·서민 실수요자에게는 보증을 통해 금융 접근성을 유지해 준다.</p>
+      <h4>결론</h4>
+      <p>가계부채 관리는 총량 억제를 넘어 상환능력 중심의 질적 관리로 가야 한다. 보증기관은 그 사이에서 리스크 관리와 포용금융을 함께 수행하는 균형추가 되어야 한다.</p>
+    </div>
+  </details>
+  <div class="actions">
+    <button type="button" data-timer="가계부채">15분 재며 써보기</button>
+    <label><input type="checkbox" data-done="q1"> 써봤음</label>
+  </div>
+</section>
+
+<!-- Q2 -->
+<section class="q" id="q2">
+  <div class="meta"><span class="pri high">가능성 높음</span><span>1번 또는 2번</span></div>
+  <h2>금융산업의 AI 활용</h2>
+  <p class="why">2023년 "디지털화의 긍정·부정 영향" 문제의 업그레이드 버전. SGI도 임직원용 업무 AI 포탈을 만들어 운영 중이에요.</p>
+  <div class="prompt">
+    <p><span class="no">2-1</span>금융·보험산업에서 AI가 활용되는 분야를 설명하시오.</p>
+    <p><span class="no">2-2</span>금융회사의 AI 도입이 가져오는 긍정적·부정적 영향을 서술하시오.</p>
+    <p><span class="no">2-3</span>보증보험사가 AI를 안전하게 활용하기 위한 방안을 제시하시오.</p>
+  </div>
+  <div class="bones">
+    <h3>답안 뼈대</h3>
+    <ul>
+      <li>활용: 신용평가·심사, 사기 탐지, 상담 챗봇, 문서 요약 등 업무 자동화</li>
+      <li>긍정: 속도·비용, 정확도, <mark>씬파일러 포용</mark>, 24시간 서비스</li>
+      <li>부정: <mark>설명 불가</mark>, 편향·차별, 개인정보 유출, 환각, 책임 소재, 빅테크 의존</li>
+      <li>방안: 사람의 최종 판단, 설명 가능한 AI, 입력 데이터 필터링, AI 윤리·거버넌스, 직원 교육</li>
+    </ul>
+  </div>
+  <details class="answer">
+    <summary>모범답안 펼치기</summary>
+    <div class="sheet">
+      <h4>서론</h4>
+      <p>생성형 AI가 빠르게 확산되면서 금융권은 AI를 핵심 경쟁력으로 삼고 있다. 그러나 금융은 신뢰를 기반으로 하는 산업이므로, AI 도입의 효과와 위험을 함께 살펴야 한다.</p>
+      <h4>2-1. 활용 분야</h4>
+      <p>첫째, 신용평가와 보증·보험 심사에서 대량의 데이터를 분석해 위험을 예측한다. 둘째, 이상거래 탐지로 보험사기와 금융사기를 걸러낸다. 셋째, 챗봇으로 고객 상담을 처리한다. 넷째, 문서 요약, 번역, 회의록 작성 등 내부 업무를 자동화한다.</p>
+      <p class="pen">↳ SGI 업무용 AI 포탈 사례 한 줄!</p>
+      <h4>2-2. 긍정적·부정적 영향</h4>
+      <p>긍정: 심사 속도와 정확도가 높아지고 비용이 줄어든다. 금융이력이 부족한 청년이나 사회초년생도 대안 데이터로 평가받을 수 있어 포용금융이 확대된다.</p>
+      <p>부정: AI의 판단 근거를 설명하기 어려워 대출이나 보증을 거절당한 소비자가 이유를 알기 어렵다. 학습 데이터의 편향이 특정 집단에 대한 차별로 이어질 수 있다. 또한 직원이 AI에 고객 정보를 입력하면 유출 위험이 생기고, 그럴듯한 오답(환각)이 업무 판단을 왜곡할 수 있다. 사고가 나면 책임 소재도 불분명하다.</p>
+      <h4>2-3. 안전한 활용 방안</h4>
+      <p>첫째, 중요한 판단은 AI가 보조하고 사람이 최종 결정하는 구조를 유지한다. 둘째, 설명 가능한 모델을 쓰고 성능과 편향을 정기적으로 검증한다. 셋째, 개인·금융정보가 AI에 입력되지 않도록 필터링한다. 넷째, 내부 AI 윤리기준과 관리 조직을 두고 AI 기본법 등 제도 변화에 대응한다. 다섯째, 직원의 AI 활용 역량과 보안 의식을 교육한다.</p>
+      <h4>결론</h4>
+      <p>보증보험은 신용, 곧 믿음을 파는 업이다. AI 도입의 성패는 효율성보다 신뢰를 지키는 데 달려 있으며, 보증보험사는 효율과 신뢰의 균형을 갖춘 AI 활용 모델을 만들어야 한다.</p>
+      <p class="pen">↳ 이 결론 문장은 AI 문제 어디에나 재활용 가능</p>
+    </div>
+  </details>
+  <div class="actions">
+    <button type="button" data-timer="금융 AI">15분 재며 써보기</button>
+    <label><input type="checkbox" data-done="q2"> 써봤음</label>
+  </div>
+</section>
+
+<!-- Q3 -->
+<section class="q" id="q3">
+  <div class="meta"><span class="pri high">가능성 높음</span><span>2~3번 SGI형</span></div>
+  <h2>AI를 활용한 보증 심사 고도화</h2>
+  <p class="why">AI 주제를 SGI 업무에 직접 붙인 형태. 회사 분석이 되어 있는지 보기 좋은 문제예요.</p>
+  <div class="prompt">
+    <p><span class="no">3</span>AI 기술을 활용한 SGI서울보증의 보증 심사 고도화 방안과, 그에 따른 리스크 관리 방안을 서술하시오.</p>
+  </div>
+  <div class="bones">
+    <h3>답안 뼈대</h3>
+    <ul>
+      <li>현재 한계: 금융이력 중심 평가로 씬파일러 불리, 전세사기 같은 신종 리스크 대응 한계</li>
+      <li>고도화: <mark>대안 데이터 신용평가</mark>, 전세 계약 위험 탐지, 구상채권 회수 예측, 사기 탐지</li>
+      <li>리스크: 모델 오류로 손해율 상승, 경기 급변 시 성능 저하, 거절 사유 설명, 개인정보</li>
+      <li>관리: 상시 모니터링·재학습, 심사역 최종 승인, 설명 체계, 데이터 최소 수집</li>
+    </ul>
+  </div>
+  <details class="answer">
+    <summary>모범답안 펼치기</summary>
+    <div class="sheet">
+      <h4>서론</h4>
+      <p>SGI서울보증은 전세, 중금리 대출, 이행보증 등 폭넓은 보증을 제공하며, 그 핵심 역량은 상대방의 신용을 판단하는 심사에 있다. AI는 이 심사 역량을 한 단계 끌어올릴 수단이지만 새로운 리스크도 함께 가져온다.</p>
+      <h4>현재 심사의 한계</h4>
+      <p>기존 심사는 금융거래 이력 중심이라 청년, 사회초년생, 자영업자처럼 이력이 짧은 고객이 불리하다. 또한 전세사기처럼 계약 구조를 악용하는 신종 위험을 사전에 잡아내는 데 한계가 있다.</p>
+      <h4>AI 활용 고도화 방안</h4>
+      <p>첫째, 통신요금·공과금 납부, 소득 흐름 등 대안 데이터를 활용한 신용평가로 중금리 보증 대상을 넓힌다. 둘째, 임대인의 다주택 여부, 선순위 채권, 시세 대비 보증금 비율 같은 패턴을 학습해 위험한 전세 계약을 사전에 탐지한다. 셋째, 보험금 지급 후 채무자에게 돌려받는 구상채권의 회수 가능성을 예측해 회수 업무를 효율화한다. 넷째, 보험사기 의심 건을 자동으로 선별한다.</p>
+      <p class="pen">↳ 구상 업무까지 쓰면 회사 이해도 확 올라감</p>
+      <h4>리스크</h4>
+      <p>모델이 위험을 과소평가하면 부실 보증이 늘어 손해율이 오른다. 과거 데이터로 학습한 모델은 경기 급변기에 성능이 떨어질 수 있다. 또 보증을 거절당한 고객에게 이유를 설명하기 어렵고, 민감한 개인정보 활용에 따른 유출 위험도 있다.</p>
+      <h4>리스크 관리 방안</h4>
+      <p>모델 성능을 상시 점검하고 주기적으로 재학습한다. 일정 금액 이상이나 경계선에 있는 건은 심사역이 최종 승인한다. 거절 사유를 고객이 이해할 수 있게 안내하는 체계를 갖추고, 데이터는 필요한 만큼만 수집해 가명 처리한다.</p>
+      <h4>결론</h4>
+      <p>AI 심사의 목표는 거절을 늘리는 것이 아니라 더 정확하게 더 많은 사람을 보증하는 데 있다. 효율성과 공공성의 균형이 SGI서울보증 AI 전략의 기준이 되어야 한다.</p>
+    </div>
+  </details>
+  <div class="actions">
+    <button type="button" data-timer="AI 보증심사">15분 재며 써보기</button>
+    <label><input type="checkbox" data-done="q3"> 써봤음</label>
+  </div>
+</section>
+
+<!-- Q4 -->
+<section class="q" id="q4">
+  <div class="meta"><span class="pri mid">가능성 중간</span><span>AI 문제와 섞어 쓰기 좋음</span></div>
+  <h2>금융권 사이버 보안</h2>
+  <p class="why">금융권 해킹과 전산 사고가 이어지는 중. 보증기관의 전산이 멈추면 전세대출 같은 실물 거래도 함께 멈춘다는 점이 포인트예요.</p>
+  <div class="prompt">
+    <p><span class="no">4</span>디지털화와 생성형 AI 확산이 금융회사의 보안 환경에 미치는 영향을 서술하고, 보증보험사의 대응 방안을 제시하시오.</p>
+  </div>
+  <div class="bones">
+    <h3>답안 뼈대</h3>
+    <ul>
+      <li>위협: 랜섬웨어, AI 기반 피싱·딥페이크, 협력업체 경유 침투, 직원의 AI 입력 유출</li>
+      <li>파급: <mark>업무 중단이 실물 거래 중단으로</mark>, 정보 유출, 신뢰 하락</li>
+      <li>기회: AI로 이상징후 탐지</li>
+      <li>대응: 업무연속성계획·백업, 제로트러스트, 협력업체 점검, 업무용 AI 통제, 소비자 보상</li>
+    </ul>
+  </div>
+  <details class="answer">
+    <summary>모범답안 펼치기</summary>
+    <div class="sheet">
+      <h4>서론</h4>
+      <p>금융권의 해킹과 전산 사고가 잇따르고 있다. 실제로 국내 보증보험사가 랜섬웨어 공격을 받아 전세대출 보증 등 업무가 수일간 중단된 사례에서 보듯, 보증기관의 전산 중단은 곧 국민의 실물 거래 중단으로 이어진다.</p>
+      <p class="pen">↳ 회사 이름 대신 "국내 보증보험사"로 일반화</p>
+      <h4>보안 환경 변화</h4>
+      <p>첫째, 랜섬웨어처럼 시스템을 인질로 잡는 공격이 늘었다. 둘째, 생성형 AI로 만든 정교한 피싱 메일과 딥페이크 음성이 사람을 속이기 쉬워졌다. 셋째, 보안이 약한 협력업체를 거쳐 들어오는 공격이 늘었다. 넷째, 직원이 업무 중 AI에 내부 정보를 입력하며 유출될 위험이 생겼다.</p>
+      <p>한편 AI는 기회이기도 하다. 평소와 다른 접속과 거래 패턴을 실시간으로 잡아내는 탐지 도구로 쓸 수 있다.</p>
+      <h4>파급 효과</h4>
+      <p>소비자는 대출 지연, 정보 유출로 직접 피해를 입는다. 금융회사는 신뢰와 평판이 떨어지고, 연결된 금융기관들로 장애가 번질 수 있다.</p>
+      <h4>대응 방안</h4>
+      <p>첫째, 핵심 업무가 멈추지 않도록 업무연속성계획을 세우고, 외부와 분리된 백업과 정기 복구 훈련을 실시한다. 둘째, 내부 접속도 매번 검증하는 제로트러스트 체계를 도입하고 협력업체 보안을 점검한다. 셋째, 업무용 AI는 사내 통제된 환경에서만 쓰게 하고 민감 정보 입력을 차단한다. 넷째, 사고 시 신속히 공지하고 소비자 피해를 보상하는 절차를 마련한다. 다섯째, 보안 인력과 투자를 늘린다.</p>
+      <h4>결론</h4>
+      <p>보안은 비용이 아니라 신뢰를 지키는 인프라다. 신용을 다루는 보증보험사일수록 보안 역량이 곧 경쟁력이다.</p>
+    </div>
+  </details>
+  <div class="actions">
+    <button type="button" data-timer="금융 보안">15분 재며 써보기</button>
+    <label><input type="checkbox" data-done="q4"> 써봤음</label>
+  </div>
+</section>
+
+<!-- Q5 -->
+<section class="q" id="q5">
+  <div class="meta"><span class="pri mid">가능성 중간</span><span>1번 신종 금융 이슈</span></div>
+  <h2>원화 스테이블코인</h2>
+  <p class="why">2021년 비트코인 문제처럼 신종 금융 이슈 자리에 들어갈 수 있어요. 디지털자산기본법 논의가 진행 중이에요.</p>
+  <div class="prompt">
+    <p><span class="no">5-1</span>스테이블코인의 개념과 원화 스테이블코인 도입 논의의 배경을 서술하시오.</p>
+    <p><span class="no">5-2</span>원화 스테이블코인 도입이 통화정책, 금융안정, 금융산업에 미치는 긍정적·부정적 영향을 서술하시오.</p>
+  </div>
+  <div class="bones">
+    <h3>답안 뼈대</h3>
+    <ul>
+      <li>개념: 법정화폐 등에 가치를 연동한 가상자산</li>
+      <li>배경: <mark>달러 스테이블코인 확산과 자본 유출</mark>, 결제·송금 효율화</li>
+      <li>긍정: 결제 비용 절감, 국제 송금 효율, 새 비즈니스</li>
+      <li>부정: 통화정책 효과 약화, 대량 상환(런) 위험, 자금세탁, 준비자산 관리</li>
+    </ul>
+  </div>
+  <details class="answer">
+    <summary>모범답안 펼치기</summary>
+    <div class="sheet">
+      <h4>5-1. 개념과 배경</h4>
+      <p>스테이블코인은 법정화폐 등 실물자산에 가치를 연동해 가격 변동을 줄인 가상자산이다. 현재 글로벌 시장은 달러 기반 스테이블코인이 주도하고 있다.</p>
+      <p>원화 스테이블코인 논의의 배경은 두 가지다. 첫째, 국내 투자자들이 달러 스테이블코인을 활용하면서 자금이 해외로 빠져나가는 통로가 되고 있다는 우려다. 둘째, 블록체인 기반 결제와 송금이 기존 방식보다 빠르고 저렴하다는 효율성 측면이다.</p>
+      <h4>5-2. 긍정적 영향</h4>
+      <p>결제와 국제 송금 비용이 줄고 속도가 빨라진다. 은행과 핀테크 기업은 발행·유통·보관 등 새로운 사업 기회를 얻는다. 달러 코인에 대한 수요 일부를 원화로 흡수해 통화주권을 지키는 효과도 기대할 수 있다.</p>
+      <h4>5-2. 부정적 영향</h4>
+      <p>통화정책: 예금이 스테이블코인으로 옮겨가면 은행의 신용창출 기능이 약해지고 통화정책 효과가 떨어질 수 있다.</p>
+      <p>금융안정: 준비자산에 대한 신뢰가 흔들리면 보유자들이 한꺼번에 상환을 요구하는 런이 발생할 수 있다.</p>
+      <p>기타: 익명성을 이용한 자금세탁, 발행사 해킹과 운영 리스크가 있다.</p>
+      <p class="pen">↳ 3개 대상(통화·안정·산업) 소제목 그대로!</p>
+      <h4>결론</h4>
+      <p>원화 스테이블코인은 혁신과 안정 사이의 균형이 핵심이다. 준비자산의 투명한 관리, 발행 주체의 자격 요건, 보안 검증 체계를 갖춘 제도화가 선행되어야 한다.</p>
+    </div>
+  </details>
+  <div class="actions">
+    <button type="button" data-timer="스테이블코인">15분 재며 써보기</button>
+    <label><input type="checkbox" data-done="q5"> 써봤음</label>
+  </div>
+</section>
+
+<!-- Q6 -->
+<section class="q" id="q6">
+  <div class="meta"><span class="pri high">가능성 높음</span><span>2~3번 SGI형</span></div>
+  <h2>상장 이후 기업가치 제고와 신사업</h2>
+  <p class="why">SGI는 2025년 3월 코스피에 상장했어요. 2024년에 해외 진출과 생활금융플랫폼이 나왔으니 신사업 문제는 계속 나올 가능성이 높아요.</p>
+  <div class="prompt">
+    <p><span class="no">6-1</span>SGI서울보증의 유가증권시장 상장이 회사 경영에 미치는 긍정적·부정적 영향을 서술하시오.</p>
+    <p><span class="no">6-2</span>보증보험 본업의 성장 한계를 극복하기 위한 SGI서울보증의 신사업 방향을 장단점과 함께 제시하시오.</p>
+  </div>
+  <div class="bones">
+    <h3>답안 뼈대</h3>
+    <ul>
+      <li>긍정: 경영 투명성, 자금 조달 다양화, 시장의 평가로 효율 경영</li>
+      <li>부정: 단기 실적·주가 압박, <mark>공공성과 수익성의 충돌</mark>, 추가 지분 매각 부담</li>
+      <li>밸류업: 주주환원, 자본 효율, 본업(전세·중금리·이행보증) 경쟁력</li>
+      <li>신사업: 해외 진출, 생활금융플랫폼, 할부·렌탈·구독 분할결제 보증</li>
+    </ul>
+  </div>
+  <details class="answer">
+    <summary>모범답안 펼치기</summary>
+    <div class="sheet">
+      <h4>서론</h4>
+      <p>SGI서울보증은 2025년 3월 유가증권시장에 상장하며 시장의 평가를 받는 기업이 되었다. 동시에 국내 보증 시장의 성장 한계 속에서 새로운 성장 동력을 찾아야 하는 과제를 안고 있다.</p>
+      <h4>6-1. 상장의 긍정적 영향</h4>
+      <p>공시 의무로 경영 투명성이 높아진다. 자본시장을 통한 자금 조달 수단이 다양해진다. 주가라는 시장의 평가가 효율적 경영의 동기가 된다. 대주주인 예금보험공사의 공적자금 회수에도 기여한다.</p>
+      <h4>6-1. 상장의 부정적 영향</h4>
+      <p>분기 실적과 주가에 대한 압박으로 단기 성과에 치우칠 수 있다. 서민 보증 같은 공적 역할이 수익성과 충돌할 수 있다. 대주주의 추가 지분 매각 가능성은 주가에 부담이 된다.</p>
+      <p class="pen">↳ 공공성 vs 수익성 = 이 회사 논술의 단골 구도</p>
+      <h4>6-2. 신사업 방향</h4>
+      <p>첫째, 해외 진출. 인도네시아 등 성장 시장에 보증 노하우를 수출하면 새 수익원이 되지만, 현지 규제와 신용정보 부족이 위험 요인이다.</p>
+      <p>둘째, 생활금융플랫폼. 보증과 생활 서비스를 연결해 고객 접점을 넓힐 수 있으나, 빅테크와의 경쟁과 초기 투자 부담이 크다.</p>
+      <p>셋째, 분할결제 보증 확대. 할부, 렌탈, 구독 시장이 커지면서 대금 미지급을 보장하는 보증 수요가 늘고 있다. AI 로봇 렌탈 보증처럼 새로운 기기와 서비스로 넓힐 수 있지만, 신규 분야라 손해율 예측이 어렵다.</p>
+      <h4>결론</h4>
+      <p>기업가치 제고와 공적 역할은 대립이 아니라 함께 가야 할 목표다. 본업의 심사 경쟁력을 기반으로 신사업을 넓히되, 서민 금융 지원이라는 공공성을 지키는 것이 장기적 신뢰와 가치를 높이는 길이다.</p>
+    </div>
+  </details>
+  <div class="actions">
+    <button type="button" data-timer="상장·신사업">15분 재며 써보기</button>
+    <label><input type="checkbox" data-done="q6"> 써봤음</label>
+  </div>
+</section>
+
+<footer>
+  모범답안은 구조와 논리 흐름을 보여 주기 위한 예시예요. 숫자와 최신 정책 내용은 시험 전에 최근 기사로 한 번 더 확인하고 넣으세요.
+</footer>
+</div>
+
+<div class="timer" id="timer" role="timer" aria-live="off">
+  <div class="in">
+    <span class="t" id="tval">15:00</span>
+    <span class="lab" id="tlab">연습 중</span>
+    <button type="button" id="tpause">일시정지</button>
+    <button type="button" id="tstop">끝내기</button>
+  </div>
+</div>
+
+<script>
+(function(){
+  // D-day
+  var exam = new Date(2026, 9, 17);
+  var now = new Date(); now.setHours(0,0,0,0);
+  var d = Math.round((exam - now) / 86400000);
+  var el = document.getElementById('dday');
+  el.textContent = d > 0 ? 'D-' + d + ', 할 수 있다!' : (d === 0 ? '오늘이 시험날! 화이팅' : '시험 끝! 수고했어요');
+
+  // done checkboxes
+  var KEY = 'sgi-essay-done';
+  var done = {};
+  try { done = JSON.parse(localStorage.getItem(KEY) || '{}') || {}; } catch(e) { done = {}; }
+  function paint(){
+    document.querySelectorAll('[data-nav]').forEach(function(a){
+      a.classList.toggle('done', !!done[a.getAttribute('data-nav')]);
+    });
+  }
+  document.querySelectorAll('[data-done]').forEach(function(cb){
+    var id = cb.getAttribute('data-done');
+    cb.checked = !!done[id];
+    cb.addEventListener('change', function(){
+      done[id] = cb.checked;
+      try { localStorage.setItem(KEY, JSON.stringify(done)); } catch(e) {}
+      paint();
+    });
+  });
+  paint();
+
+  // timer
+  var box = document.getElementById('timer'), tval = document.getElementById('tval'),
+      tlab = document.getElementById('tlab'), tpause = document.getElementById('tpause'),
+      tstop = document.getElementById('tstop');
+  var left = 900, iv = null, running = false;
+  function show(){
+    var m = Math.floor(Math.abs(left) / 60), s = Math.abs(left) % 60;
+    tval.textContent = (left < 0 ? '+' : '') + m + ':' + (s < 10 ? '0' : '') + s;
+    box.classList.toggle('over', left < 0);
+    if (left === 0) tlab.textContent = tlab.dataset.name + ' 시간 끝! 결론 한 줄로 마무리';
+  }
+  function tick(){ left--; show(); }
+  function start(){ if (iv) clearInterval(iv); iv = setInterval(tick, 1000); running = true; tpause.textContent = '일시정지'; }
+  document.querySelectorAll('[data-timer]').forEach(function(b){
+    b.addEventListener('click', function(){
+      left = 900;
+      tlab.dataset.name = b.getAttribute('data-timer');
+      tlab.textContent = tlab.dataset.name + ' 연습 중';
+      box.classList.add('on'); show(); start();
+    });
+  });
+  tpause.addEventListener('click', function(){
+    if (running) { clearInterval(iv); running = false; tpause.textContent = '계속'; }
+    else start();
+  });
+  tstop.addEventListener('click', function(){ clearInterval(iv); running = false; box.classList.remove('on'); });
+})();
+</script>
+</body>
+</html>
